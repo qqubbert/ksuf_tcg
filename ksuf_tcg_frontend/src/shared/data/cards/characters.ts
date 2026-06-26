@@ -32,6 +32,7 @@ export const characterCards: CardProps[] = [
     rarity: "epic",
     isOwned: true,
     foilMask: "/cards/frieren_m.png",
+    texture: "/patterns/illusion.avif",
   },
 
   {
@@ -80,6 +81,7 @@ export const characterCards: CardProps[] = [
     rarity: "legendary",
     isOwned: false,
     foilMask: "/cards/makima_m.png",
+    texture: "/patterns/jellytriangles.jpg",
   },
 
   {
@@ -96,6 +98,7 @@ export const characterCards: CardProps[] = [
     rarity: "legendary",
     isOwned: false,
     foilMask: "/cards/naruto_m.png",
+    texture: "/patterns/illusion.jpg",
   },
 
   {
@@ -401,6 +404,7 @@ export const characterCards: CardProps[] = [
     rarity: "legendary",
     isOwned: false,
     foilMask: "/cards/homelander_m.png",
+    texture: "/patterns/cube3d.png",
   },
 
   {
@@ -545,6 +549,7 @@ export const characterCards: CardProps[] = [
     rarity: "epic",
     isOwned: false,
     foilMask: "/cards/vergil_m.png",
+    texture: "/patterns/illusion.avif",
   },
   {
     id: "luffy",
@@ -561,6 +566,7 @@ export const characterCards: CardProps[] = [
     rarity: "epic",
     isOwned: false,
     foilMask: "/cards/luffy_m.png",
+    texture: "/patterns/cube3d.png",
   },
   {
     id: "shrek",
@@ -684,6 +690,7 @@ export const characterCards: CardProps[] = [
     rarity: "rare",
     isOwned: true,
     foilMask: "/cards/gustavo_fring_m.png",
+    texture: "/patterns/illusion.avif",
   },
   {
     id: "nacho_varga",
@@ -715,6 +722,7 @@ export const characterCards: CardProps[] = [
     rarity: "rare",
     isOwned: false,
     foilMask: "/cards/elliot_alderson_m.png",
+    texture: "/patterns/zigzag.avif",
   },
   {
     id: "jon_snow",
@@ -811,6 +819,7 @@ export const characterCards: CardProps[] = [
     rarity: "epic",
     isOwned: true,
     foilMask: "/cards/pucci_cmoon_m.png",
+    texture: "/patterns/circles.png",
   },
 
   {
@@ -828,6 +837,7 @@ export const characterCards: CardProps[] = [
     rarity: "legendary",
     isOwned: false,
     foilMask: "/cards/pucci_made_in_heaven_m.png",
+    texture: "/patterns/circles.png",
   },
   {
     id: "lays_crab",
@@ -874,6 +884,7 @@ export const characterCards: CardProps[] = [
     rarity: "epic",
     isOwned: true,
     foilMask: "/cards/john_wick_m.png",
+    texture: "/patterns/cube3d.png",
   },
   {
     id: "witness_fryazino",
@@ -942,6 +953,7 @@ export const characterCards: CardProps[] = [
     rarity: "legendary",
     isOwned: false,
     foilMask: "/cards/darthvader_m.png",
+    texture: "/patterns/cube3d.png",
   },
   {
     id: "magikarp",
@@ -989,6 +1001,7 @@ export const characterCards: CardProps[] = [
     rarity: "epic",
     isOwned: true,
     foilMask: "/cards/bakugo_m.png",
+    texture: "/patterns/circles.png",
   },
   {
     id: "hitori_gotoh",
@@ -1019,7 +1032,8 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "epic",
     isOwned: true,
-    foilMask: "/cards/reze_m.png"
+    foilMask: "/cards/reze_m.png",
+    texture: "/patterns/circles.png",
   },
   {
     id: "hatsune_miku",
@@ -1035,7 +1049,9 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "epic",
     isOwned: true,
-    foilMask: "/cards/miku_m.png"
+    foilMask: "/cards/miku_m.png",
+    // texture: "/patterns/cube3d.png",
+    texture: "/patterns/jellytriangles.jpg",
   },
 ];
 
