@@ -270,7 +270,7 @@ export const characterCards: CardProps[] = [
 
   {
     id: "caine",
-    name: "caine",
+    name: "Caine",
     description:
       "Enigmatic ringmaster controlling the rules of a digital circus.",
     image: "/cards/caine.webp",
@@ -363,7 +363,7 @@ export const characterCards: CardProps[] = [
       { id: "water", icon: "🌊", title: "Water Breathing" },
       { id: "sense", icon: "👃", title: "Enhanced Senses" },
     ],
-    rarity: "epic",
+    rarity: "rare",
     isOwned: true,
     texture: "/patterns/circles.png",
     foilMask: "/cards/tanjiro_m.png",
@@ -450,7 +450,7 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "rare",
     isOwned: false,
-    foilMask: "/cards/spiderman_m.png"
+    foilMask: "/cards/spiderman_m.png",
   },
 
   {
@@ -476,7 +476,7 @@ export const characterCards: CardProps[] = [
     description:
       "Peak human strategist using preparation, gadgets, and psychological warfare.",
     image: "/cards/batman.jpg",
-    hp: 8,
+    hp: 5,
     attack: 8,
     abilities: [
       { id: "prep", icon: "🧠", title: "Preparation Mastery" },
@@ -491,8 +491,8 @@ export const characterCards: CardProps[] = [
     description:
       "Insecure and average individual often caught in chaotic situations.",
     image: "/cards/jerrySmith.webp",
-    hp: 4,
-    attack: 3,
+    hp: 1,
+    attack: 1,
     abilities: [
       { id: "panic", icon: "😰", title: "Panic Response" },
       { id: "luck", icon: "🍀", title: "Random Survival" },
@@ -505,7 +505,7 @@ export const characterCards: CardProps[] = [
     name: "Stormtrooper",
     description: "Imperial soldier with poor accuracy but basic training.",
     image: "/cards/stormtrooper.webp",
-    hp: 5,
+    hp: 3,
     attack: 4,
     abilities: [
       { id: "blaster", icon: "🔫", title: "Blaster Shot" },
@@ -558,7 +558,7 @@ export const characterCards: CardProps[] = [
       { id: "gum_gum", icon: "🪢", title: "Gum-Gum Punch" },
       { id: "stretch", icon: "🤸", title: "Rubber Body" },
     ],
-    rarity: "rare",
+    rarity: "epic",
     isOwned: false,
     foilMask: "/cards/luffy_m.png",
   },
@@ -574,7 +574,7 @@ export const characterCards: CardProps[] = [
       { id: "swamp", icon: "🌿", title: "Swamp Strength" },
       { id: "roar", icon: "😡", title: "Ogre Roar" },
     ],
-    rarity: "rare",
+    rarity: "common",
     isOwned: false,
   },
   {
@@ -598,14 +598,14 @@ export const characterCards: CardProps[] = [
     description:
       "German medium tank with reliable armor and balanced firepower, effective in sustained engagements.",
     image: "/cards/pz_kpfw_4_ausf_h.jpeg",
-    hp: 9,
-    attack: 7,
+    hp: 12,
+    attack: 8,
     abilities: [
       { id: "shell", icon: "💥", title: "Cannon Shell" },
       { id: "armor", icon: "🛡️", title: "Reinforced Armor" },
     ],
     rarity: "rare",
-    isOwned: true,
+    isOwned: false,
     foilMask: "/cards/pz_kpfw_4_ausf_h_m.png",
   },
   {
@@ -621,7 +621,421 @@ export const characterCards: CardProps[] = [
       { id: "support", icon: "🌱", title: "Passive Growth Aura" },
     ],
     rarity: "common",
+    isOwned: false,
+  },
+  {
+    id: "bsod",
+    name: "Blue Screen of Death",
+    description:
+      "A critical system failure that abruptly halts all activity and leaves everything temporarily unresponsive.",
+    image: "/cards/bsod.jpg",
+    hp: 1,
+    attack: 6,
+    abilities: [
+      { id: "crash", icon: "💙", title: "System Crash" },
+      { id: "freeze", icon: "🖥️", title: "Freeze Process" },
+    ],
+    rarity: "rare",
     isOwned: true,
+  },
+  {
+    id: "creeper",
+    name: "Creeper",
+    description:
+      "A silent explosive creature that gets stronger the closer it is to its target.",
+    image: "/cards/creeper.png",
+    hp: 4,
+    attack: 8,
+    abilities: [
+      { id: "hiss", icon: "💣", title: "Primed Explosion" },
+      { id: "boom", icon: "💥", title: "Self-Destruct" },
+    ],
+    rarity: "common",
+    isOwned: false,
+  },
+  {
+    id: "tommy_shelby",
+    name: "Thomas Shelby",
+    description:
+      "A brilliant gang leader who dominates through strategy, influence, and calculated risk-taking.",
+    image: "/cards/tommy_shelby.jpg",
+    hp: 7,
+    attack: 8,
+    abilities: [
+      { id: "plan", icon: "🎩", title: "Mastermind" },
+      { id: "influence", icon: "💼", title: "Political Influence" },
+    ],
+    rarity: "rare",
+    isOwned: true,
+    foilMask: "/cards/tommy_shelby_m.png",
+  },
+  {
+    id: "gustavo_fring",
+    name: "Gustavo Fring",
+    description:
+      "A calm and meticulous crime lord who hides ruthless ambition behind a flawless public image.",
+    image: "/cards/gustavo_fring.jpg",
+    hp: 7,
+    attack: 8,
+    abilities: [
+      { id: "empire", icon: "🍗", title: "Criminal Empire" },
+      { id: "strategy", icon: "♟️", title: "Perfect Planning" },
+    ],
+    rarity: "rare",
+    isOwned: true,
+    foilMask: "/cards/gustavo_fring_m.png",
+  },
+  {
+    id: "nacho_varga",
+    name: "Nacho Varga",
+    description:
+      "A resourceful survivor forced to outsmart dangerous enemies on every side.",
+    image: "/cards/nacho_varga.webp",
+    hp: 6,
+    attack: 7,
+    abilities: [
+      { id: "stealth", icon: "🕶️", title: "Undercover" },
+      { id: "escape", icon: "🏃", title: "Last Resort" },
+    ],
+    rarity: "common",
+    isOwned: false,
+  },
+  {
+    id: "elliot_alderson",
+    name: "Elliot Alderson",
+    description:
+      "A brilliant hacker capable of dismantling powerful systems through intelligence and determination.",
+    image: "/cards/elliot_alderson.jpg",
+    hp: 5,
+    attack: 8,
+    abilities: [
+      { id: "hack", icon: "💻", title: "System Breach" },
+      { id: "fsociety", icon: "👤", title: "fsociety" },
+    ],
+    rarity: "rare",
+    isOwned: false,
+    foilMask: "/cards/elliot_alderson_m.png",
+  },
+  {
+    id: "jon_snow",
+    name: "Jon Snow",
+    description:
+      "An honorable warrior who inspires allies and stands firm against impossible odds.",
+    image: "/cards/jon_snow.webp",
+    hp: 8,
+    attack: 8,
+    abilities: [
+      { id: "longclaw", icon: "⚔️", title: "Longclaw" },
+      { id: "leadership", icon: "🐺", title: "King in the North" },
+    ],
+    rarity: "rare",
+    isOwned: false,
+    foilMask: "/cards/jon_snow_m.png",
+  },
+  {
+    id: "pennywise",
+    name: "Pennywise",
+    description:
+      "A shape-shifting entity that feeds on fear and manipulates perception to isolate and weaken opponents.",
+    image: "/cards/pennywise.jpg",
+    hp: 8,
+    attack: 9,
+    abilities: [
+      { id: "fear", icon: "🎈", title: "Manifest Fear" },
+      { id: "illusion", icon: "🌀", title: "Reality Distortion" },
+    ],
+    rarity: "epic",
+    isOwned: true,
+    foilMask: "/cards/pennywise_m.png",
+  },
+  {
+    id: "warden",
+    name: "The Warden",
+    description:
+      "A blind, sensory-driven entity that hunts by sound and vibration, overwhelming anything that disturbs its domain.",
+    image: "/cards/warden.jpg",
+    hp: 10,
+    attack: 10,
+    abilities: [
+      { id: "sonic", icon: "📢", title: "Sonic Burst" },
+      { id: "hunt", icon: "🖤", title: "Predator Instinct" },
+    ],
+    rarity: "epic",
+    isOwned: true,
+    foilMask: "/cards/warden_m.png",
+  },
+  {
+    id: "kurt_cobain",
+    name: "Kurt Cobain",
+    description:
+      "A fragile yet influential presence that disrupts enemy morale and weakens coordinated actions over time.",
+    image: "/cards/kurt_cobain.jpg",
+    hp: 3,
+    attack: 2,
+    abilities: [
+      { id: "mood", icon: "🎸", title: "Mood Shift" },
+      { id: "debuff", icon: "🌫️", title: "Morale Collapse" },
+    ],
+    rarity: "common",
+    isOwned: true,
+  },
+  {
+    id: "pucci_whitesnake",
+    name: "Enrico Pucci (Whitesnake)",
+    description:
+      "Devoted priest with a Stand capable of extracting and manipulating memories and abilities.",
+    image: "/cards/pucci_whitesnake.jpg",
+    hp: 7,
+    attack: 8,
+    abilities: [
+      { id: "disk", icon: "💿", title: "Memory Disc Extraction" },
+      { id: "steal", icon: "🧠", title: "Ability Theft" },
+    ],
+    rarity: "epic",
+    isOwned: true,
+    foilMask: "/cards/pucci_whitesnake_m.png",
+  },
+
+  {
+    id: "pucci_cmoon",
+    name: "Enrico Pucci (C-Moon)",
+    description:
+      "Stand user who manipulates gravity and inverts physical forces in combat.",
+    image: "/cards/pucci_cmoon.webp",
+    hp: 8,
+    attack: 9,
+    abilities: [
+      { id: "gravity", icon: "🌑", title: "Gravity Reversal" },
+      { id: "impact", icon: "💥", title: "Surface Inversion Strike" },
+    ],
+    rarity: "epic",
+    isOwned: true,
+    foilMask: "/cards/pucci_cmoon_m.png",
+  },
+
+  {
+    id: "pucci_made_in_heaven",
+    name: "Enrico Pucci (Made in Heaven)",
+    description:
+      "Final evolution of Pucci's Stand, accelerating time to reshape the flow of the universe.",
+    image: "/cards/pucci_made_in_heaven.jpg",
+    hp: 9,
+    attack: 10,
+    abilities: [
+      { id: "time_accel", icon: "⏱️", title: "Time Acceleration" },
+      { id: "reset", icon: "♾️", title: "Universal Reset Cycle" },
+    ],
+    rarity: "legendary",
+    isOwned: false,
+    foilMask: "/cards/pucci_made_in_heaven_m.png",
+  },
+  {
+    id: "lays_crab",
+    name: "Lays (Crab Flavor)",
+    description:
+      "A legendary snack infused with artificial crab flavor. Grants morale boost and distracts enemies with crunch energy.",
+    image: "/cards/lays_crab.jpg",
+    hp: 1,
+    attack: 1,
+    abilities: [
+      { id: "crunch", icon: "🍟", title: "Crunch Distraction" },
+      { id: "salt", icon: "🧂", title: "Salt Debuff" },
+    ],
+    rarity: "common",
+    isOwned: true,
+  },
+  {
+    id: "krosh",
+    name: "Krosh",
+    description:
+      "Energetic blue rabbit from a cartoon world, capable of chaotic movement and unpredictable actions.",
+    image: "/cards/krosh.jpg",
+    hp: 4,
+    attack: 5,
+    abilities: [
+      { id: "bounce", icon: "⚽", title: "Hyper Bounce Attack" },
+      { id: "chaos", icon: "🎯", title: "Unpredictable Movement" },
+    ],
+    rarity: "common",
+    isOwned: false,
+  },
+  {
+    id: "john_wick",
+    name: "John Wick",
+    description:
+      "Highly trained assassin with unmatched precision, tactical thinking, and combat efficiency.",
+    image: "/cards/john_wick.webp",
+    hp: 8,
+    attack: 10,
+    abilities: [
+      { id: "gun_fu", icon: "🔫", title: "Gun-Fu Mastery" },
+      { id: "focus", icon: "🎯", title: "Perfect Execution" },
+    ],
+    rarity: "epic",
+    isOwned: true,
+    foilMask: "/cards/john_wick_m.png",
+  },
+  {
+    id: "witness_fryazino",
+    name: "Witness from Fryazino",
+    description:
+      "An ordinary observer who accidentally knows too much. Survives by avoiding attention and staying unnoticed.",
+    image: "/cards/witness_fryazino.webp",
+    hp: 3,
+    attack: 2,
+    abilities: [
+      { id: "hide", icon: "👁️", title: "Invisible Presence" },
+      { id: "confuse", icon: "❓", title: "Confusing Testimony" },
+    ],
+    rarity: "common",
+    isOwned: false,
+  },
+  {
+    id: "scrat",
+    name: "Scrat",
+    description:
+      "Obsessive prehistoric squirrel endlessly chasing an acorn, causing large-scale environmental chaos unintentionally.",
+    image: "/cards/scrat.webp",
+    hp: 2,
+    attack: 4,
+    abilities: [
+      { id: "acorn", icon: "🥜", title: "Acorn Obsession" },
+      { id: "collapse", icon: "🪨", title: "Chain Reaction Disaster" },
+    ],
+    rarity: "common",
+    isOwned: false,
+  },
+  {
+    id: "sweetieFox",
+    name: "Sweetie Fox",
+    description: "You all know who is she.",
+    image: "/cards/sweetiefox.jpg",
+    hp: 3,
+    attack: 2,
+    abilities: [{ id: "porn", icon: "🔞", title: "Film p*rn" }],
+    rarity: "common",
+    isOwned: false,
+  },
+  {
+    id: "dianarider",
+    name: "Diana Rider",
+    description: "You all know who is she.",
+    image: "/cards/dianarider.webp",
+    hp: 3,
+    attack: 2,
+    abilities: [{ id: "porn", icon: "🔞", title: "Film p*rn" }],
+    rarity: "common",
+    isOwned: false,
+  },
+  {
+    id: "darth_vader",
+    name: "Darth Vader",
+    description:
+      "A former Jedi turned Sith Lord who wields the dark side of the Force with devastating control and precision.",
+    image: "/cards/darthvader.jpg",
+    hp: 9,
+    attack: 9,
+    abilities: [
+      { id: "force_choke", icon: "🖐️", title: "Force Choke" },
+      { id: "force_push", icon: "🌪️", title: "Force Push" },
+    ],
+    rarity: "legendary",
+    isOwned: false,
+    foilMask: "/cards/darthvader_m.png",
+  },
+  {
+    id: "magikarp",
+    name: "Magikarp",
+    description:
+      "A weak but persistent Pokémon known for its survival instinct and unexpected potential evolution.",
+    image: "/cards/magikarp.webp",
+    hp: 2,
+    attack: 1,
+    abilities: [
+      { id: "splash", icon: "💦", title: "Splash" },
+      { id: "flop", icon: "🐟", title: "Flop Around" },
+    ],
+    rarity: "common",
+    isOwned: true,
+  },
+  {
+    id: "ak47",
+    name: "AK-47",
+    description:
+      "A highly reliable assault rifle known for durability, simplicity, and lethal efficiency in combat scenarios.",
+    image: "/cards/ak47.jpg",
+    hp: 3,
+    attack: 9,
+    abilities: [
+      { id: "burst_fire", icon: "🔫", title: "Burst Fire" },
+      { id: "suppress", icon: "💥", title: "Suppression Fire" },
+    ],
+    rarity: "rare",
+    isOwned: false,
+    foilMask: "/cards/ak47_m.png",
+  },
+  {
+    id: "bakugo",
+    name: "Katsuki Bakugo",
+    description:
+      "Explosive combat specialist with aggressive fighting style and extreme combat drive.",
+    image: "/cards/bakugo.jpg",
+    hp: 7,
+    attack: 9,
+    abilities: [
+      { id: "explosion", icon: "💥", title: "Explosion" },
+      { id: "howitzer", icon: "🔥", title: "Howitzer Impact" },
+    ],
+    rarity: "epic",
+    isOwned: true,
+    foilMask: "/cards/bakugo_m.png",
+  },
+  {
+    id: "hitori_gotoh",
+    name: "Hitori Gotoh",
+    description:
+      "An extremely introverted guitarist who grows stronger through music, anxiety, and unexpected performance bursts.",
+    image: "/cards/hitori.jpg",
+    hp: 4,
+    attack: 7,
+    abilities: [
+      { id: "guitar_solo", icon: "🎸", title: "Guitar Solo Burst" },
+      { id: "panic_mode", icon: "😵", title: "Anxiety Overdrive" },
+    ],
+    rarity: "common",
+    isOwned: true,
+  },
+  {
+    id: "reze",
+    name: "Reze",
+    description:
+      "A charming and deadly hybrid with explosive abilities and deceptive combat style.",
+    image: "/cards/reze.png",
+    hp: 7,
+    attack: 9,
+    abilities: [
+      { id: "bomb", icon: "💣", title: "Bomb Transformation" },
+      { id: "assassination", icon: "🗡️", title: "Silent Kill" },
+    ],
+    rarity: "epic",
+    isOwned: true,
+    foilMask: "/cards/reze_m.png"
+  },
+  {
+    id: "hatsune_miku",
+    name: "Hatsune Miku",
+    description:
+      "A virtual idol who influences reality through sound, rhythm, and mass perception control.",
+    image: "/cards/miku.jpg",
+    hp: 6,
+    attack: 6,
+    abilities: [
+      { id: "vocaloid_wave", icon: "🎤", title: "Vocal Wave Attack" },
+      { id: "hologram", icon: "🌐", title: "Holographic Overload" },
+    ],
+    rarity: "epic",
+    isOwned: true,
+    foilMask: "/cards/miku_m.png"
   },
 ];
 
