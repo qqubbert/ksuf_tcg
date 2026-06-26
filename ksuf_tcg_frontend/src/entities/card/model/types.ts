@@ -15,9 +15,10 @@ export type CardProps = {
 
   abilities?: CardAbility[];
 
-  rarity?: "common" | "rare" | "epic" | "legendary";
+  rarity: "common" | "rare" | "epic" | "legendary";
 
   isOwned: boolean;
 
   foilMask?: string;
+  texture?: string;
 };

@@ -2,12 +2,17 @@
 
 import "./App.css";
 
-import { Hand } from "@widgets/hand";
+import { Hand } from "@features/hand";
+import { Collection } from "@widgets/collection/ui/Collection";
+import { CardGrid } from "@features/CardGrid";
+import { KsufMembers } from "@shared/data/cards/characters";
 
 function App() {
   return (
     <>
-      <Hand />
+      <Collection />
+      {/* <CardGrid cards={KsufMembers}/> */}
+      {/* <Hand /> */}
     </>
   );
 }

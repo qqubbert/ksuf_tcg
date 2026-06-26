@@ -1,0 +1,26 @@
+.toolbar {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.count {
+  margin-left: auto;
+  font-size: 12px;
+  opacity: 0.7;
+  background-color: black;
+  color: white;
+  padding: 2px 10px;
+  border-radius: 5px;
+}
+
+.button {
+  padding: 2px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button.selected {
+  background-color: cadetblue;
+}

@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import type { CardProps } from "../../model/types";
 import styles from "./Card.module.css";
+import { rarityStyle } from "@shared/data";
 
 type Props = {
   data: CardProps;
@@ -36,6 +37,10 @@ export const Card = ({ data }: Props) => {
 
     el.style.setProperty("--mx", `${x}px`);
     el.style.setProperty("--my", `${y}px`);
+
+    const foilRotate = rotateY * 4 - rotateX * 2;
+
+    el.style.setProperty("--foil-rotate", `${foilRotate}deg`);
   };
 
   const handleMouseEnter = () => {
@@ -46,6 +51,8 @@ export const Card = ({ data }: Props) => {
     const el = cardRef.current;
     if (!el) return;
 
+    setIsHovered(false);
+
     el.style.transform = `
     perspective(900px)
     rotateX(0deg)
@@ -53,9 +60,22 @@ export const Card = ({ data }: Props) => {
     scale(1)
   `;
 
-    el.style.setProperty("--mx", `-50%`);
-    el.style.setProperty("--my", `-50%`);
+    // НЕ ставим -50% сразу
+    // даём “затухание”
   };
+
+  const maskStyle = mask
+    ? {
+        WebkitMaskImage: `url(${mask})`,
+        maskImage: `url(${mask})`,
+        WebkitMaskSize: "cover",
+        maskSize: "cover",
+        WebkitMaskRepeat: "no-repeat",
+        maskRepeat: "no-repeat",
+        WebkitMaskPosition: "center",
+        maskPosition: "center",
+      }
+    : undefined;
 
   return (
     <div
@@ -65,34 +85,31 @@ export const Card = ({ data }: Props) => {
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      style={
+        {
+          "--aura-color": rarityStyle[data.rarity].color,
+        } as React.CSSProperties
+      }
     >
-      {/* <svg className={styles.mask} width="0" height="0">
-        <defs>
-          <mask id={`card-mask-${data.id}`}>
-            <rect width="100%" height="100%" fill="white" />
-            <circle cx="50%" cy="20%" r="40%" fill="black" />
-          </mask>
-        </defs>
-      </svg> */}
-
+      <div className={styles.dust}></div>
       <div className={styles.lightNoise} />
-      <div
-        className={styles.foil}
-        style={
-          mask
-            ? ({
-                WebkitMaskImage: `url(${mask})`,
-                maskImage: `url(${mask})`,
-                WebkitMaskSize: "cover",
-                maskSize: "cover",
-                WebkitMaskRepeat: "no-repeat",
-                maskRepeat: "no-repeat",
-                WebkitMaskPosition: "center",
-                maskPosition: "center",
-              } as React.CSSProperties)
-            : undefined
-        }
-      />
+
+      {data.texture && (
+        <>
+          <div
+            className={styles.texture}
+            style={
+              {
+                backgroundImage: `url(${data.texture})`,
+                ...maskStyle,
+              } as React.CSSProperties
+            }
+          ></div>
+          <div className={styles.textureLight} style={maskStyle} />
+        </>
+      )}
+      <div className={styles.metallicFoil} style={{ ...maskStyle }} />
+      <div className={styles.foil} style={{ ...maskStyle }} />
       <div className={styles.noise} />
       <div className={styles.specular} />
 
@@ -136,14 +153,7 @@ export const Card = ({ data }: Props) => {
             rgba(255,255,255,calc(0.05 * var(--intensity))),
             transparent 50%
           )`,
-          WebkitMaskImage: `url(${mask})`,
-          maskImage: `url(${mask})`,
-          WebkitMaskSize: "cover",
-          maskSize: "cover",
-          WebkitMaskRepeat: "no-repeat",
-          maskRepeat: "no-repeat",
-          WebkitMaskPosition: "center",
-          maskPosition: "center",
+          ...maskStyle,
         }}
       />
     </div>

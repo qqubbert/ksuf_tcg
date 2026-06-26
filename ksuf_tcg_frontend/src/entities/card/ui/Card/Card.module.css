@@ -26,28 +26,75 @@
   user-select: none;
   cursor: pointer;
 
-  border: 4px solid rgb(68, 68, 68);
+  /* border: 4px solid rgb(68, 68, 68); */
+  /* outline: 1px solid transparent; */
+  outline: rgba(255, 255, 255, 0.1) 1px solid;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  box-shadow: 0 0 30px 0px rgba(255, 255, 255, 0) ;
+
+  transition: box-shadow 0.3s ease-in-out;
 }
 
-.card:not(:hover) .foil,
+/* .card:hover {
+  box-shadow: 0 0 30px 0px rgba(var(--aura-color), 0.3);
+  outline: rgba(255, 255, 255, 0.25) 1px solid;
+} */
+
+.texture {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 8;
+  mix-blend-mode: color-dodge;
+  background-repeat: repeat;
+  background-size: 50%;
+  opacity: 0.1;
+
+  background-image:
+    radial-gradient(
+      circle at var(--mx) var(--my),
+      rgba(255,255,255,0.8),
+      transparent 40%
+    ),
+    url("/textures/your-texture.png");
+}
+
+.textureLight {
+  position: absolute;
+  inset: 0;
+  z-index: 9;
+  pointer-events: none;
+
+  background: radial-gradient(
+    circle at var(--mx) var(--my),
+    rgba(255,255,255,0.9),
+    rgba(255,255,255,0.25) 20%,
+    transparent 55%
+  );
+
+  mix-blend-mode: screen;
+  opacity: 0.5;
+}
+
+/* .card:not(:hover) .foil,
 .card:not(:hover) .specular, 
 .card:not(:hover) .lightNoise, 
 .card:not(:hover) .light
 {
   display: none;
-}
+} */
 
-.card:hover .foil,
+/* .card:hover .foil,
 .card:hover .specular, 
 .card:hover .lightNoise, 
 .card:hover .light
 {
   display: block;
-}
+} */
 
 .glow {
   position: absolute;
@@ -67,6 +114,8 @@
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: start;
+  
   padding: 10px;
   position: relative;
   z-index: 2;
@@ -74,21 +123,27 @@
 
 .bottomInfo {
   z-index: 4;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 10%, transparent 90%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 10%, transparent 95%);
 }
 
 .name {
+  flex: 1;
+  /* max-width: calc(100% - 100px); */
   font-weight: 700;
   font-size: 16px;
 }
 
 .stats {
+  flex-shrink: 0;
   display: flex;
   gap: 6px;
   font-size: 12px;
 }
 
 .stats span {
+  text-align: center;
+  /* width: 45px; */
+  /* height: 25px; */
   border-radius: 5px;
   padding: 2px 4px;
   border: black 1px solid;
@@ -149,6 +204,14 @@
   z-index: 1;
 }
 
+.light {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  /*opacity: 0.5;*/
+}
+
 .lightNoise {
   position: absolute;
   inset: 0;
@@ -156,13 +219,13 @@
 
   background: radial-gradient(
     circle at var(--mx) var(--my),
-    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 1),
     transparent 60%
   );
 
-  mix-blend-mode: screen;
+  mix-blend-mode:color-burn;
 
-  opacity: 0.6;
+  opacity: 0.9;
 
   mask-image: url("/textures/noise.png");
   -webkit-mask-image: url("/textures/noise.png");
@@ -189,53 +252,133 @@
 }
 
 .image {
+  border: 4px solid rgb(68, 68, 68);
+  border-radius: 16px;
   width: 100%;
   height: 100%;
   object-fit: cover;
   filter: brightness(0.9) contrast(1.1);
 }
 
-.light {
+
+.dust {
   position: absolute;
   inset: 0;
   pointer-events: none;
+  z-index: 5;
+
+  background:
+    radial-gradient(
+      circle at var(--mx) var(--my),
+      rgba(255,255,255,1),
+      rgba(255,255,255,.8) 10%,
+      rgba(255,255,255,.9) 25%,
+      transparent 45%
+    );
+
+  mask-image: url("/textures/sparkles.png");
+  -webkit-mask-image: url("/textures/sparkles.png");
+
+  mask-size: 100%;
+  -webkit-mask-size: 100%;
+
   mix-blend-mode: screen;
-  /*opacity: 0.5;*/
 }
 
-.card[data-rarity="common"] .foil {
+.metallicFoil {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+
+  opacity: 0.65;
+  mix-blend-mode: color-burn;
+
+  background: linear-gradient(
+    125deg,
+    rgba(0, 0, 0, 1),
+    rgba(255, 255, 255, 0.5),
+    rgba(0, 0, 0, 1),
+    rgba(255, 255, 255, 0.5),
+    rgba(0, 0, 0, 1)
+  );
+
+  background-size: 100% 100%;
+  background-position: var(--mx) var(--my);
+}
+
+.card[data-rarity="common"] .metallicFoil
+{
+  display: none;
+}
+
+.card[data-rarity="common"] .foil
+{
   opacity: 0.05;
   filter: grayscale(1);
 }
 
-.card[data-rarity="rare"] .foil {
-  opacity: 0.5;
-  mix-blend-mode: screen;
-
-  background: linear-gradient(
-    125deg,
-    rgba(255, 0, 150, 0),
-    rgba(255, 255, 255, 0.75),
-    rgba(255, 0, 150, 0),
-    rgba(255, 255, 255, 0.75),
-    rgba(255, 0, 150, 0)
-  );
-  
-
-  background-size: 100% 100%;
-  background-position: var(--mx)  var(--my);
-}
-
-.card[data-rarity="epic"]:hover .foil {
+.card[data-rarity="epic"] .foil {
   opacity: 0.8;
-  animation: holoMove 6s infinite linear;
-  /* filter: saturate(1) brightness(1); */
+  filter: saturate(1.5) brightness(1.25);
+  background-size: 100% 100%;
+  background-position: var(--mx) var(--my);
 }
 
-.card[data-rarity="legendary"]:hover .foil {
-  opacity: 0.9;
-  animation: holoMove 3s infinite linear;
+.card[data-rarity="epic"] .metallicFoil {
+  opacity: 0.5;
+  /* mix-blend-mode: color-burn; */
+}
+
+.card[data-rarity="legendary"] .foil {
+  opacity: 0.8;
   filter: saturate(2) brightness(1.5);
+  background-size: 100% 100%;
+  background-position: var(--mx) var(--my);
+
+  background: radial-gradient(
+    95.11% 95.11% at 36.64% 4.89%,
+    #2ad0ca 0%,
+    #e1f664 22.92%,
+    #feb0fe 46.88%,
+    #abb3fc 68.23%,
+    #5df7a4 87.5%,
+    #58c4f6 100%
+  );
+}
+
+.card[data-rarity="legendary"] .foil::before,
+.card[data-rarity="legendary"] .foil::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  border-radius: inherit;
+  background: conic-gradient(
+    from 176.21deg at 50% 50%,
+    #000000 -24.66deg,
+    #ffffff 0.25deg,
+    #000000 50.63deg,
+    #000000 51.97deg,
+    #ffffff 88.12deg,
+    #000000 142.5deg,
+    #ffffff 196.87deg,
+    #000000 256.87deg,
+    #ffffff 300deg,
+    #000000 335.2deg,
+    #000000 335.34deg,
+    #ffffff 360.25deg
+  );
+  transform: translate(-25%, -25%) rotate(var(--foil-rotate));
+}
+
+.card[data-rarity="legendary"] .foil::before {
+  mix-blend-mode: difference;
+}
+.card[data-rarity="legendary"] .foil::after {
+  mix-blend-mode: overlay;
 }
 
 .foil {
@@ -269,7 +412,7 @@
   background-size: 200% 200%;
   background-position: calc(var(--mx) * 0.5) calc(var(--my) * 0.5);
 
-  opacity: 0.5;
+  opacity: 0.25;
 
   /* КЛЮЧ */
   /* mask-image: url("/textures/noise.png");
@@ -287,20 +430,10 @@
   background: radial-gradient(
     circle at var(--mx) var(--my),
     rgba(255, 255, 255, 0.6),
-    /* rgba(120, 200, 255, 0.6), */
-    /* rgba(255, 0, 200, 0.5), */
-    transparent 25%
+    /* rgba(120, 200, 255, 0.6), */ /* rgba(255, 0, 200, 0.5), */ transparent
+      25%
   );
 
   mix-blend-mode: overlay;
   opacity: 0.7;
-}
-
-@keyframes holoMove {
-  0% {
-    background-position: 0% 0%;
-  }
-  100% {
-    background-position: 100% 100%;
-  }
 }

@@ -38,7 +38,7 @@ export const Hand = () => {
   // const step = count > 1 ? maxAngle / (count - 1) : 0;
 
   // динамический сдвиг
-  const offsetStep = Math.max(40, 120 - count * 5);
+  const offsetStep = Math.max(70, 120 - count * 5);
 
   return (
     <>
