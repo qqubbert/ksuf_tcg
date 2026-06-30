@@ -1,4 +1,4 @@
-import type { CardProps } from "@entities/card";
+import type { CardProps } from "@types";
 
 export const characterCards: CardProps[] = [
   {
@@ -6,7 +6,7 @@ export const characterCards: CardProps[] = [
     name: "Jotaro Kujo",
     description:
       "Stoic Stand user with overwhelming physical strength and precision.",
-    image: "/cards/jotaro.jpg",
+    image: "/cards/imgs/jotaro.jpg",
     hp: 9,
     attack: 8,
     abilities: [
@@ -14,15 +14,15 @@ export const characterCards: CardProps[] = [
       { id: "stop", icon: "⏱️", title: "Time Stop" },
     ],
     rarity: "legendary",
-    isOwned: true,
-    foilMask: "/cards/jotaro_m.png",
+    count: 1,
+    foilMask: "/cards/m/jotaro_m.png",
   },
 
   {
     id: "frieren",
     name: "Frieren",
     description: "Ancient mage who studies the nature of magic and time.",
-    image: "/cards/frieren.jpg",
+    image: "/cards/imgs/frieren.jpg",
     hp: 6,
     attack: 9,
     abilities: [
@@ -30,8 +30,8 @@ export const characterCards: CardProps[] = [
       { id: "analysis", icon: "📚", title: "Mana Analysis" },
     ],
     rarity: "epic",
-    isOwned: true,
-    foilMask: "/cards/frieren_m.png",
+    count: 1,
+    foilMask: "/cards/m/frieren_m.png",
     texture: "/patterns/illusion.avif",
   },
 
@@ -39,7 +39,7 @@ export const characterCards: CardProps[] = [
     id: "denji",
     name: "Denji",
     description: "Chainsaw Devil hybrid with chaotic combat style.",
-    image: "/cards/denji.webp",
+    image: "/cards/imgs/denji.webp",
     hp: 5,
     attack: 7,
     abilities: [
@@ -47,15 +47,16 @@ export const characterCards: CardProps[] = [
       { id: "devil", icon: "😈", title: "Devil Trigger" },
     ],
     rarity: "rare",
-    isOwned: true,
-    foilMask: "/cards/denji_m.png",
+    count: 4,
+    foilMask: "/cards/m/denji_m.png",
+    dustOpacity: 0.3,
   },
 
   {
     id: "mikasa",
     name: "Mikasa Ackerman",
     description: "Elite soldier with extreme agility and combat instincts.",
-    image: "/cards/mikasa.jpg",
+    image: "/cards/imgs/mikasa.jpg",
     hp: 7,
     attack: 8,
     abilities: [
@@ -63,7 +64,7 @@ export const characterCards: CardProps[] = [
       { id: "titan", icon: "🧠", title: "Ackerman Instinct" },
     ],
     rarity: "rare",
-    isOwned: false,
+    count: 0,
   },
 
   {
@@ -71,7 +72,7 @@ export const characterCards: CardProps[] = [
     name: "Makima",
     description:
       "Mysterious control devil manipulating humans and devils alike.",
-    image: "/cards/makima.jpg",
+    image: "/cards/imgs/makima.jpg",
     hp: 10,
     attack: 7,
     abilities: [
@@ -79,8 +80,8 @@ export const characterCards: CardProps[] = [
       { id: "fear", icon: "😶", title: "Fear Contract" },
     ],
     rarity: "legendary",
-    isOwned: false,
-    foilMask: "/cards/makima_m.png",
+    count: 0,
+    foilMask: "/cards/m/makima_m.png",
     texture: "/patterns/jellytriangles.jpg",
   },
 
@@ -88,7 +89,7 @@ export const characterCards: CardProps[] = [
     id: "naruto",
     name: "Naruto Uzumaki",
     description: "Ninja with boundless energy and Nine-Tails power.",
-    image: "/cards/naruto.jpg",
+    image: "/cards/imgs/naruto.jpg",
     hp: 8,
     attack: 8,
     abilities: [
@@ -96,16 +97,17 @@ export const characterCards: CardProps[] = [
       { id: "kurama", icon: "🦊", title: "Nine-Tails Mode" },
     ],
     rarity: "legendary",
-    isOwned: false,
-    foilMask: "/cards/naruto_m.png",
+    count: 0,
+    foilMask: "/cards/m/naruto_m.png",
     texture: "/patterns/illusion.jpg",
+    dustOpacity: 0.25,
   },
 
   {
     id: "tyler",
     name: "Tyler Durden",
     description: "Anarchic symbol of rebellion and psychological collapse.",
-    image: "/cards/tyler.jpg",
+    image: "/cards/imgs/tyler.jpg",
     hp: 6,
     attack: 9,
     abilities: [
@@ -113,14 +115,15 @@ export const characterCards: CardProps[] = [
       { id: "fightclub", icon: "🥊", title: "Fight Club Doctrine" },
     ],
     rarity: "rare",
-    isOwned: true,
+    count: 8,
+    dustOpacity: 0.5,
   },
 
   {
     id: "walter",
     name: "Walter White",
     description: "Chemistry teacher turned strategic drug empire architect.",
-    image: "/cards/walter.jpg",
+    image: "/cards/imgs/walter.jpg",
     hp: 7,
     attack: 8,
     abilities: [
@@ -128,15 +131,16 @@ export const characterCards: CardProps[] = [
       { id: "heisenberg", icon: "🎩", title: "Heisenberg Mode" },
     ],
     rarity: "rare",
-    isOwned: false,
-    foilMask: "/cards/walter_m.png",
+    count: 0,
+    foilMask: "/cards/m/walter_m.png",
+    dustOpacity: 0.35,
   },
 
   {
     id: "saul",
     name: "Saul Goodman",
     description: "Manipulative lawyer exploiting loopholes in law.",
-    image: "/cards/saul.webp",
+    image: "/cards/imgs/saul.webp",
     hp: 5,
     attack: 6,
     abilities: [
@@ -144,15 +148,16 @@ export const characterCards: CardProps[] = [
       { id: "deal", icon: "📞", title: "Backroom Deals" },
     ],
     rarity: "rare",
-    isOwned: true,
-    foilMask: "/cards/saul_m.png",
+    count: 1,
+    foilMask: "/cards/m/saul_m.png",
+    dustOpacity: 0.3,
   },
 
   {
     id: "mike",
     name: "Mike Ehrmantraut",
     description: "Professional fixer with military-level discipline.",
-    image: "/cards/mike.jpeg",
+    image: "/cards/imgs/mike.jpeg",
     hp: 9,
     attack: 7,
     abilities: [
@@ -160,15 +165,16 @@ export const characterCards: CardProps[] = [
       { id: "tactics", icon: "🎯", title: "Tactical Planning" },
     ],
     rarity: "rare",
-    isOwned: true,
-    foilMask: "/cards/mike_m.png",
+    count: 1,
+    foilMask: "/cards/m/mike_m.png",
+    dustOpacity: 0,
   },
 
   {
     id: "berlin",
     name: "Berlin",
     description: "Charismatic and ruthless strategist from a heist crew.",
-    image: "/cards/berlin.jpg",
+    image: "/cards/imgs/berlin.jpg",
     hp: 7,
     attack: 8,
     abilities: [
@@ -176,15 +182,16 @@ export const characterCards: CardProps[] = [
       { id: "heist", icon: "💰", title: "Heist Execution" },
     ],
     rarity: "rare",
-    isOwned: false,
-    foilMask: "/cards/berlin_m.png",
+    count: 0,
+    foilMask: "/cards/m/berlin_m.png",
+    dustOpacity: 0.3,
   },
   {
     id: "power",
     name: "Power",
     description:
       "Blood Devil with chaotic behavior and unpredictable combat style.",
-    image: "/cards/power.png",
+    image: "/cards/imgs/power.png",
     hp: 7,
     attack: 9,
     abilities: [
@@ -192,13 +199,13 @@ export const characterCards: CardProps[] = [
       { id: "berserk", icon: "😈", title: "Berserk Rampage" },
     ],
     rarity: "rare",
-    isOwned: true,
+    count: 1,
   },
   {
     id: "midoriya",
     name: "Izuku Midoriya",
     description: "Hero-in-training with analytical mind and inherited power.",
-    image: "/cards/midoriya.jpg",
+    image: "/cards/imgs/midoriya.jpg",
     hp: 7,
     attack: 8,
     abilities: [
@@ -206,15 +213,15 @@ export const characterCards: CardProps[] = [
       { id: "analysis", icon: "📊", title: "Combat Analysis" },
     ],
     rarity: "epic",
-    isOwned: true,
-    foilMask: "/cards/midoriya_m.png",
+    count: 1,
+    foilMask: "/cards/m/midoriya_m.png",
   },
   {
     id: "asuka",
     name: "Asuka Langley",
     description:
       "Elite EVA pilot with high confidence and aggressive combat style.",
-    image: "/cards/asuka.jpg",
+    image: "/cards/imgs/asuka.jpg",
     hp: 7,
     attack: 8,
     abilities: [
@@ -222,14 +229,15 @@ export const characterCards: CardProps[] = [
       { id: "rage", icon: "🔥", title: "Prideful Assault" },
     ],
     rarity: "rare",
-    isOwned: true,
+    count: 1,
+    dustOpacity: 0.7,
   },
   {
     id: "rei",
     name: "Rei Ayanami",
     description:
       "Mysterious EVA pilot with calm emotional profile and high synchronization.",
-    image: "/cards/rei.png",
+    image: "/cards/imgs/rei.png",
     hp: 6,
     attack: 7,
     abilities: [
@@ -237,13 +245,14 @@ export const characterCards: CardProps[] = [
       { id: "shield", icon: "🛡️", title: "A.T. Field Defense" },
     ],
     rarity: "rare",
-    isOwned: true,
+    count: 1,
+    dustOpacity: 0.7,
   },
   {
     id: "eren",
     name: "Eren Yeager",
     description: "Titan shifter driven by destruction and freedom.",
-    image: "/cards/eren.jpg",
+    image: "/cards/imgs/eren.jpg",
     hp: 9,
     attack: 10,
     abilities: [
@@ -251,15 +260,16 @@ export const characterCards: CardProps[] = [
       { id: "rage", icon: "⚡", title: "Rumbling Fury" },
     ],
     rarity: "epic",
-    isOwned: false,
-    foilMask: "/cards/eren_m.png",
+    count: 0,
+    foilMask: "/cards/m/eren_m.png",
+    dustOpacity: 0.3,
   },
   {
     id: "pomni",
     name: "Pomni",
     description:
       "Lost digital performer trapped inside a surreal virtual circus.",
-    image: "/cards/pomni.webp",
+    image: "/cards/imgs/pomni.webp",
     hp: 5,
     attack: 6,
     abilities: [
@@ -267,8 +277,8 @@ export const characterCards: CardProps[] = [
       { id: "panic", icon: "😵", title: "Desperation Burst" },
     ],
     rarity: "rare",
-    isOwned: true,
-    foilMask: "/cards/pomni_m.png",
+    count: 1,
+    foilMask: "/cards/m/pomni_m.png",
   },
 
   {
@@ -276,7 +286,7 @@ export const characterCards: CardProps[] = [
     name: "Caine",
     description:
       "Enigmatic ringmaster controlling the rules of a digital circus.",
-    image: "/cards/caine.webp",
+    image: "/cards/imgs/caine.webp",
     hp: 8,
     attack: 7,
     abilities: [
@@ -284,15 +294,16 @@ export const characterCards: CardProps[] = [
       { id: "illusion", icon: "🪄", title: "Reality Manipulation" },
     ],
     rarity: "epic",
-    isOwned: true,
-    foilMask: "/cards/caine_m.png",
+    count: 1,
+    foilMask: "/cards/m/caine_m.png",
+    dustOpacity: 0.2,
   },
   {
     id: "senku",
     name: "Senku Ishigami",
     description:
       "Scientific genius rebuilding civilization through pure logic and chemistry.",
-    image: "/cards/senku.jpg",
+    image: "/cards/imgs/senku.jpg",
     hp: 6,
     attack: 7,
     abilities: [
@@ -300,8 +311,8 @@ export const characterCards: CardProps[] = [
       { id: "analysis", icon: "📐", title: "Hyper Analysis" },
     ],
     rarity: "rare",
-    isOwned: true,
-    foilMask: "/cards/senku_m.png",
+    count: 1,
+    foilMask: "/cards/m/senku_m.png",
   },
 
   {
@@ -309,7 +320,7 @@ export const characterCards: CardProps[] = [
     name: "DIO",
     description:
       "Vampiric Stand user with overwhelming ambition and time manipulation.",
-    image: "/cards/dio.jpg",
+    image: "/cards/imgs/dio.jpg",
     hp: 9,
     attack: 10,
     abilities: [
@@ -317,8 +328,9 @@ export const characterCards: CardProps[] = [
       { id: "vampire", icon: "🩸", title: "Vampiric Regeneration" },
     ],
     rarity: "legendary",
-    isOwned: false,
-    foilMask: "/cards/dio_m.png",
+    count: 0,
+    foilMask: "/cards/m/dio_m.png",
+    dustOpacity: 0.2,
   },
 
   {
@@ -326,7 +338,7 @@ export const characterCards: CardProps[] = [
     name: "Rebecca",
     description:
       "Cyberpunk mercenary optimized for mobility, precision, and high-risk combat.",
-    image: "/cards/rebecca.png",
+    image: "/cards/imgs/rebecca.png",
     hp: 7,
     attack: 9,
     abilities: [
@@ -334,8 +346,8 @@ export const characterCards: CardProps[] = [
       { id: "rush", icon: "⚡", title: "High-Speed Assault" },
     ],
     rarity: "rare",
-    isOwned: true,
-    foilMask: "/cards/rebecca_m.png",
+    count: 1,
+    foilMask: "/cards/m/rebecca_m.png",
     texture: "/patterns/cube3d.png",
   },
   {
@@ -343,7 +355,7 @@ export const characterCards: CardProps[] = [
     name: "L",
     description:
       "Master detective relying on deduction and psychological manipulation.",
-    image: "/cards/l.jpg",
+    image: "/cards/imgs/l.jpg",
     hp: 5,
     attack: 6,
     abilities: [
@@ -351,7 +363,8 @@ export const characterCards: CardProps[] = [
       { id: "trap", icon: "🔍", title: "Psychological Trap" },
     ],
     rarity: "rare",
-    isOwned: true,
+    count: 1,
+    dustOpacity: 0.6,
   },
 
   {
@@ -359,7 +372,7 @@ export const characterCards: CardProps[] = [
     name: "Tanjiro Kamado",
     description:
       "Demon Slayer with heightened senses and adaptive combat style.",
-    image: "/cards/tanjiro.jpg",
+    image: "/cards/imgs/tanjiro.jpg",
     hp: 7,
     attack: 8,
     abilities: [
@@ -367,9 +380,9 @@ export const characterCards: CardProps[] = [
       { id: "sense", icon: "👃", title: "Enhanced Senses" },
     ],
     rarity: "rare",
-    isOwned: true,
+    count: 1,
     texture: "/patterns/circles.png",
-    foilMask: "/cards/tanjiro_m.png",
+    foilMask: "/cards/m/tanjiro_m.png",
   },
 
   {
@@ -377,7 +390,7 @@ export const characterCards: CardProps[] = [
     name: "Guts",
     description:
       "Berserker warrior surviving impossible odds through sheer willpower.",
-    image: "/cards/guts.jpg",
+    image: "/cards/imgs/guts.jpg",
     hp: 9,
     attack: 10,
     abilities: [
@@ -385,8 +398,8 @@ export const characterCards: CardProps[] = [
       { id: "dragonslayer", icon: "⚔️", title: "Dragon Slayer Strike" },
     ],
     rarity: "epic",
-    isOwned: false,
-    foilMask: "/cards/guts_m.png",
+    count: 0,
+    foilMask: "/cards/m/guts_m.png",
   },
 
   {
@@ -394,7 +407,7 @@ export const characterCards: CardProps[] = [
     name: "Homelander",
     description:
       "Unstable superhuman with overwhelming power and psychological dominance.",
-    image: "/cards/homelander.jpg",
+    image: "/cards/imgs/homelander.jpg",
     hp: 10,
     attack: 10,
     abilities: [
@@ -402,9 +415,10 @@ export const characterCards: CardProps[] = [
       { id: "fear", icon: "😨", title: "Psychological Domination" },
     ],
     rarity: "legendary",
-    isOwned: false,
-    foilMask: "/cards/homelander_m.png",
+    count: 0,
+    foilMask: "/cards/m/homelander_m.png",
     texture: "/patterns/cube3d.png",
+    dustOpacity: 0,
   },
 
   {
@@ -412,7 +426,7 @@ export const characterCards: CardProps[] = [
     name: "Demogorgon",
     description:
       "Interdimensional predator hunting by instinct and overwhelming strength.",
-    image: "/cards/demogorgon.webp",
+    image: "/cards/imgs/demogorgon.webp",
     hp: 8,
     attack: 9,
     abilities: [
@@ -420,7 +434,7 @@ export const characterCards: CardProps[] = [
       { id: "hunt", icon: "🦷", title: "Predatory Assault" },
     ],
     rarity: "rare",
-    isOwned: true,
+    count: 1,
   },
 
   {
@@ -428,7 +442,7 @@ export const characterCards: CardProps[] = [
     name: "Kratos",
     description:
       "God of War driven by vengeance, wielding divine power and brutal force.",
-    image: "/cards/kratos.avif",
+    image: "/cards/imgs/kratos.avif",
     hp: 10,
     attack: 10,
     abilities: [
@@ -436,8 +450,9 @@ export const characterCards: CardProps[] = [
       { id: "blades", icon: "⚔️", title: "Blades of Chaos" },
     ],
     rarity: "epic",
-    isOwned: true,
-    foilMask: "/cards/kratos_m.png",
+    count: 1,
+    foilMask: "/cards/m/kratos_m.png",
+    dustOpacity: 0.3,
   },
 
   {
@@ -445,7 +460,7 @@ export const characterCards: CardProps[] = [
     name: "Spider-Man",
     description:
       "Agile hero with enhanced reflexes, intelligence, and spider-sense.",
-    image: "/cards/spiderman.jpg",
+    image: "/cards/imgs/spiderman.jpg",
     hp: 7,
     attack: 8,
     abilities: [
@@ -453,8 +468,9 @@ export const characterCards: CardProps[] = [
       { id: "sense", icon: "⚡", title: "Spider-Sense" },
     ],
     rarity: "rare",
-    isOwned: false,
-    foilMask: "/cards/spiderman_m.png",
+    count: 0,
+    foilMask: "/cards/m/spiderman_m.png",
+    dustOpacity: 0.3,
   },
 
   {
@@ -462,7 +478,7 @@ export const characterCards: CardProps[] = [
     name: "Deadpool",
     description:
       "Unpredictable mercenary with regeneration and chaotic combat style.",
-    image: "/cards/deadpool.avif",
+    image: "/cards/imgs/deadpool.avif",
     hp: 8,
     attack: 9,
     abilities: [
@@ -470,8 +486,9 @@ export const characterCards: CardProps[] = [
       { id: "chaos", icon: "🎯", title: "Fourth Wall Break" },
     ],
     rarity: "epic",
-    isOwned: false,
-    foilMask: "/cards/deadpool_m.png",
+    count: 0,
+    foilMask: "/cards/m/deadpool_m.png",
+    dustOpacity: 0.2,
   },
 
   {
@@ -479,7 +496,7 @@ export const characterCards: CardProps[] = [
     name: "Batman",
     description:
       "Peak human strategist using preparation, gadgets, and psychological warfare.",
-    image: "/cards/batman.jpg",
+    image: "/cards/imgs/batman.jpg",
     hp: 5,
     attack: 8,
     abilities: [
@@ -487,14 +504,15 @@ export const characterCards: CardProps[] = [
       { id: "gadget", icon: "🦇", title: "Gadget Arsenal" },
     ],
     rarity: "rare",
-    isOwned: true,
+    count: 1,
+    dustOpacity: 0.3,
   },
   {
     id: "jerrySmith",
     name: "Jerry Smith",
     description:
       "Insecure and average individual often caught in chaotic situations.",
-    image: "/cards/jerrySmith.webp",
+    image: "/cards/imgs/jerrySmith.webp",
     hp: 1,
     attack: 1,
     abilities: [
@@ -502,13 +520,13 @@ export const characterCards: CardProps[] = [
       { id: "luck", icon: "🍀", title: "Random Survival" },
     ],
     rarity: "common",
-    isOwned: true,
+    count: 1,
   },
   {
     id: "stormtrooper",
     name: "Stormtrooper",
     description: "Imperial soldier with poor accuracy but basic training.",
-    image: "/cards/stormtrooper.webp",
+    image: "/cards/imgs/stormtrooper.webp",
     hp: 3,
     attack: 4,
     abilities: [
@@ -516,14 +534,14 @@ export const characterCards: CardProps[] = [
       { id: "miss", icon: "💨", title: "Accidental Miss" },
     ],
     rarity: "common",
-    isOwned: true,
+    count: 1,
   },
   {
     id: "saitama",
     name: "Saitama",
     description:
       "Hero who defeated every opponent with a single punch, possessing overwhelming and absolute strength.",
-    image: "/cards/saitama.jpg",
+    image: "/cards/imgs/saitama.jpg",
     hp: 10,
     attack: 10,
     abilities: [
@@ -531,15 +549,15 @@ export const characterCards: CardProps[] = [
       { id: "serious_punch", icon: "💥", title: "Serious Punch" },
     ],
     rarity: "legendary",
-    isOwned: true,
-    foilMask: "/cards/saitama_m.png",
+    count: 1,
+    foilMask: "/cards/m/saitama_m.png",
   },
   {
     id: "vergil",
     name: "Vergil",
     description:
       "Cold and precise swordsman seeking absolute power through disciplined combat.",
-    image: "/cards/vergil.jpg",
+    image: "/cards/imgs/vergil.jpg",
     hp: 8,
     attack: 10,
     abilities: [
@@ -547,16 +565,17 @@ export const characterCards: CardProps[] = [
       { id: "judgment", icon: "⚡", title: "Judgment Cut" },
     ],
     rarity: "epic",
-    isOwned: false,
-    foilMask: "/cards/vergil_m.png",
+    count: 0,
+    foilMask: "/cards/m/vergil_m.png",
     texture: "/patterns/illusion.avif",
+    dustOpacity: 0.2,
   },
   {
     id: "luffy",
     name: "Monkey D. Luffy",
     description:
       "Energetic pirate with rubber body and unpredictable fighting style.",
-    image: "/cards/luffy.jpg",
+    image: "/cards/imgs/luffy.jpg",
     hp: 7,
     attack: 8,
     abilities: [
@@ -564,16 +583,17 @@ export const characterCards: CardProps[] = [
       { id: "stretch", icon: "🤸", title: "Rubber Body" },
     ],
     rarity: "epic",
-    isOwned: false,
-    foilMask: "/cards/luffy_m.png",
+    count: 0,
+    foilMask: "/cards/m/luffy_m.png",
     texture: "/patterns/cube3d.png",
+    dustOpacity: 0.2,
   },
   {
     id: "shrek",
     name: "Shrek",
     description:
       "Unstoppable swamp ogre with extreme durability and dominance in close combat.",
-    image: "/cards/shrek.jpg",
+    image: "/cards/imgs/shrek.jpg",
     hp: 9,
     attack: 7,
     abilities: [
@@ -581,14 +601,15 @@ export const characterCards: CardProps[] = [
       { id: "roar", icon: "😡", title: "Ogre Roar" },
     ],
     rarity: "common",
-    isOwned: false,
+    count: 0,
+    dustOpacity: 0.5,
   },
   {
     id: "tuntun_sahur",
     name: "Tun Tun Sahur",
     description:
       "A chaotic meme entity that appears unpredictably and disrupts the flow of battle.",
-    image: "/cards/tuntun_sahur.jpg",
+    image: "/cards/imgs/tuntun_sahur.jpg",
     hp: 3,
     attack: 2,
     abilities: [
@@ -596,14 +617,15 @@ export const characterCards: CardProps[] = [
       { id: "chaos", icon: "🎭", title: "Disrupt Turn Order" },
     ],
     rarity: "common",
-    isOwned: false,
+    count: 0,
+    dustOpacity: 0.4,
   },
   {
     id: "panzer_iv_ausf_h",
     name: "Pz. Kpfw. IV Ausf. H",
     description:
       "German medium tank with reliable armor and balanced firepower, effective in sustained engagements.",
-    image: "/cards/pz_kpfw_4_ausf_h.jpeg",
+    image: "/cards/imgs/pz_kpfw_4_ausf_h.jpeg",
     hp: 12,
     attack: 8,
     abilities: [
@@ -611,15 +633,15 @@ export const characterCards: CardProps[] = [
       { id: "armor", icon: "🛡️", title: "Reinforced Armor" },
     ],
     rarity: "rare",
-    isOwned: false,
-    foilMask: "/cards/pz_kpfw_4_ausf_h_m.png",
+    count: 0,
+    foilMask: "/cards/m/pz_kpfw_4_ausf_h_m.png",
   },
   {
     id: "sunflower_pvz",
     name: "Sunflower",
     description:
       "Support plant that generates energy over time and strengthens allied defenses indirectly.",
-    image: "/cards/sunflower_pvz.jpg",
+    image: "/cards/imgs/sunflower_pvz.jpg",
     hp: 3,
     attack: 1,
     abilities: [
@@ -627,14 +649,15 @@ export const characterCards: CardProps[] = [
       { id: "support", icon: "🌱", title: "Passive Growth Aura" },
     ],
     rarity: "common",
-    isOwned: false,
+    count: 0,
+    dustOpacity: 0.4,
   },
   {
     id: "bsod",
     name: "Blue Screen of Death",
     description:
       "A critical system failure that abruptly halts all activity and leaves everything temporarily unresponsive.",
-    image: "/cards/bsod.jpg",
+    image: "/cards/imgs/bsod.jpg",
     hp: 1,
     attack: 6,
     abilities: [
@@ -642,14 +665,15 @@ export const characterCards: CardProps[] = [
       { id: "freeze", icon: "🖥️", title: "Freeze Process" },
     ],
     rarity: "rare",
-    isOwned: true,
+    count: 1,
+    dustOpacity: 0.4,
   },
   {
     id: "creeper",
     name: "Creeper",
     description:
       "A silent explosive creature that gets stronger the closer it is to its target.",
-    image: "/cards/creeper.png",
+    image: "/cards/imgs/creeper.png",
     hp: 4,
     attack: 8,
     abilities: [
@@ -657,14 +681,15 @@ export const characterCards: CardProps[] = [
       { id: "boom", icon: "💥", title: "Self-Destruct" },
     ],
     rarity: "common",
-    isOwned: false,
+    count: 0,
+    dustOpacity: 0.2,
   },
   {
     id: "tommy_shelby",
     name: "Thomas Shelby",
     description:
       "A brilliant gang leader who dominates through strategy, influence, and calculated risk-taking.",
-    image: "/cards/tommy_shelby.jpg",
+    image: "/cards/imgs/tommy_shelby.jpg",
     hp: 7,
     attack: 8,
     abilities: [
@@ -672,15 +697,16 @@ export const characterCards: CardProps[] = [
       { id: "influence", icon: "💼", title: "Political Influence" },
     ],
     rarity: "rare",
-    isOwned: true,
-    foilMask: "/cards/tommy_shelby_m.png",
+    count: 1,
+    foilMask: "/cards/m/tommy_shelby_m.png",
+    dustOpacity: 0.4,
   },
   {
     id: "gustavo_fring",
     name: "Gustavo Fring",
     description:
       "A calm and meticulous crime lord who hides ruthless ambition behind a flawless public image.",
-    image: "/cards/gustavo_fring.jpg",
+    image: "/cards/imgs/gustavo_fring.jpg",
     hp: 7,
     attack: 8,
     abilities: [
@@ -688,16 +714,17 @@ export const characterCards: CardProps[] = [
       { id: "strategy", icon: "♟️", title: "Perfect Planning" },
     ],
     rarity: "rare",
-    isOwned: true,
-    foilMask: "/cards/gustavo_fring_m.png",
+    count: 1,
+    foilMask: "/cards/m/gustavo_fring_m.png",
     texture: "/patterns/illusion.avif",
+    dustOpacity: 0.1,
   },
   {
     id: "nacho_varga",
     name: "Nacho Varga",
     description:
       "A resourceful survivor forced to outsmart dangerous enemies on every side.",
-    image: "/cards/nacho_varga.webp",
+    image: "/cards/imgs/nacho_varga.webp",
     hp: 6,
     attack: 7,
     abilities: [
@@ -705,14 +732,15 @@ export const characterCards: CardProps[] = [
       { id: "escape", icon: "🏃", title: "Last Resort" },
     ],
     rarity: "common",
-    isOwned: false,
+    count: 0,
+    dustOpacity: 0.5,
   },
   {
     id: "elliot_alderson",
     name: "Elliot Alderson",
     description:
       "A brilliant hacker capable of dismantling powerful systems through intelligence and determination.",
-    image: "/cards/elliot_alderson.jpg",
+    image: "/cards/imgs/elliot_alderson.jpg",
     hp: 5,
     attack: 8,
     abilities: [
@@ -720,16 +748,17 @@ export const characterCards: CardProps[] = [
       { id: "fsociety", icon: "👤", title: "fsociety" },
     ],
     rarity: "rare",
-    isOwned: false,
-    foilMask: "/cards/elliot_alderson_m.png",
+    count: 0,
+    foilMask: "/cards/m/elliot_alderson_m.png",
     texture: "/patterns/zigzag.avif",
+    dustOpacity: 0.2,
   },
   {
     id: "jon_snow",
     name: "Jon Snow",
     description:
       "An honorable warrior who inspires allies and stands firm against impossible odds.",
-    image: "/cards/jon_snow.webp",
+    image: "/cards/imgs/jon_snow.webp",
     hp: 8,
     attack: 8,
     abilities: [
@@ -737,15 +766,15 @@ export const characterCards: CardProps[] = [
       { id: "leadership", icon: "🐺", title: "King in the North" },
     ],
     rarity: "rare",
-    isOwned: false,
-    foilMask: "/cards/jon_snow_m.png",
+    count: 0,
+    foilMask: "/cards/m/jon_snow_m.png",
   },
   {
     id: "pennywise",
     name: "Pennywise",
     description:
       "A shape-shifting entity that feeds on fear and manipulates perception to isolate and weaken opponents.",
-    image: "/cards/pennywise.jpg",
+    image: "/cards/imgs/pennywise.jpg",
     hp: 8,
     attack: 9,
     abilities: [
@@ -753,15 +782,15 @@ export const characterCards: CardProps[] = [
       { id: "illusion", icon: "🌀", title: "Reality Distortion" },
     ],
     rarity: "epic",
-    isOwned: true,
-    foilMask: "/cards/pennywise_m.png",
+    count: 1,
+    foilMask: "/cards/m/pennywise_m.png",
   },
   {
     id: "warden",
     name: "The Warden",
     description:
       "A blind, sensory-driven entity that hunts by sound and vibration, overwhelming anything that disturbs its domain.",
-    image: "/cards/warden.jpg",
+    image: "/cards/imgs/warden.jpg",
     hp: 10,
     attack: 10,
     abilities: [
@@ -769,15 +798,16 @@ export const characterCards: CardProps[] = [
       { id: "hunt", icon: "🖤", title: "Predator Instinct" },
     ],
     rarity: "epic",
-    isOwned: true,
-    foilMask: "/cards/warden_m.png",
+    count: 1,
+    foilMask: "/cards/m/warden_m.png",
+    dustOpacity: 0,
   },
   {
     id: "kurt_cobain",
     name: "Kurt Cobain",
     description:
       "A fragile yet influential presence that disrupts enemy morale and weakens coordinated actions over time.",
-    image: "/cards/kurt_cobain.jpg",
+    image: "/cards/imgs/kurt_cobain.jpg",
     hp: 3,
     attack: 2,
     abilities: [
@@ -785,14 +815,15 @@ export const characterCards: CardProps[] = [
       { id: "debuff", icon: "🌫️", title: "Morale Collapse" },
     ],
     rarity: "common",
-    isOwned: true,
+    count: 1,
+    dustOpacity: 0.3,
   },
   {
     id: "pucci_whitesnake",
     name: "Enrico Pucci (Whitesnake)",
     description:
       "Devoted priest with a Stand capable of extracting and manipulating memories and abilities.",
-    image: "/cards/pucci_whitesnake.jpg",
+    image: "/cards/imgs/pucci_whitesnake.jpg",
     hp: 7,
     attack: 8,
     abilities: [
@@ -800,8 +831,9 @@ export const characterCards: CardProps[] = [
       { id: "steal", icon: "🧠", title: "Ability Theft" },
     ],
     rarity: "epic",
-    isOwned: true,
-    foilMask: "/cards/pucci_whitesnake_m.png",
+    count: 1,
+    foilMask: "/cards/m/pucci_whitesnake_m.png",
+    dustOpacity: 0.3,
   },
 
   {
@@ -809,7 +841,7 @@ export const characterCards: CardProps[] = [
     name: "Enrico Pucci (C-Moon)",
     description:
       "Stand user who manipulates gravity and inverts physical forces in combat.",
-    image: "/cards/pucci_cmoon.webp",
+    image: "/cards/imgs/pucci_cmoon.webp",
     hp: 8,
     attack: 9,
     abilities: [
@@ -817,17 +849,17 @@ export const characterCards: CardProps[] = [
       { id: "impact", icon: "💥", title: "Surface Inversion Strike" },
     ],
     rarity: "epic",
-    isOwned: true,
-    foilMask: "/cards/pucci_cmoon_m.png",
+    count: 1,
+    foilMask: "/cards/m/pucci_cmoon_m.png",
     texture: "/patterns/circles.png",
+    dustOpacity: 0.3,
   },
-
   {
     id: "pucci_made_in_heaven",
     name: "Enrico Pucci (Made in Heaven)",
     description:
       "Final evolution of Pucci's Stand, accelerating time to reshape the flow of the universe.",
-    image: "/cards/pucci_made_in_heaven.jpg",
+    image: "/cards/imgs/pucci_made_in_heaven.jpg",
     hp: 9,
     attack: 10,
     abilities: [
@@ -835,16 +867,17 @@ export const characterCards: CardProps[] = [
       { id: "reset", icon: "♾️", title: "Universal Reset Cycle" },
     ],
     rarity: "legendary",
-    isOwned: false,
-    foilMask: "/cards/pucci_made_in_heaven_m.png",
+    count: 0,
+    foilMask: "/cards/m/pucci_made_in_heaven_m.png",
     texture: "/patterns/circles.png",
+    dustOpacity: 0.3,
   },
   {
     id: "lays_crab",
     name: "Lays (Crab Flavor)",
     description:
       "A legendary snack infused with artificial crab flavor. Grants morale boost and distracts enemies with crunch energy.",
-    image: "/cards/lays_crab.jpg",
+    image: "/cards/imgs/lays_crab.jpg",
     hp: 1,
     attack: 1,
     abilities: [
@@ -852,14 +885,15 @@ export const characterCards: CardProps[] = [
       { id: "salt", icon: "🧂", title: "Salt Debuff" },
     ],
     rarity: "common",
-    isOwned: true,
+    count: 1,
+    dustOpacity: 0.3,
   },
   {
     id: "krosh",
     name: "Krosh",
     description:
       "Energetic blue rabbit from a cartoon world, capable of chaotic movement and unpredictable actions.",
-    image: "/cards/krosh.jpg",
+    image: "/cards/imgs/krosh.jpg",
     hp: 4,
     attack: 5,
     abilities: [
@@ -867,14 +901,14 @@ export const characterCards: CardProps[] = [
       { id: "chaos", icon: "🎯", title: "Unpredictable Movement" },
     ],
     rarity: "common",
-    isOwned: false,
+    count: 0,
   },
   {
     id: "john_wick",
     name: "John Wick",
     description:
       "Highly trained assassin with unmatched precision, tactical thinking, and combat efficiency.",
-    image: "/cards/john_wick.webp",
+    image: "/cards/imgs/john_wick.webp",
     hp: 8,
     attack: 10,
     abilities: [
@@ -882,16 +916,17 @@ export const characterCards: CardProps[] = [
       { id: "focus", icon: "🎯", title: "Perfect Execution" },
     ],
     rarity: "epic",
-    isOwned: true,
-    foilMask: "/cards/john_wick_m.png",
+    count: 1,
+    foilMask: "/cards/m/john_wick_m.png",
     texture: "/patterns/cube3d.png",
+    dustOpacity: 0.2,
   },
   {
     id: "witness_fryazino",
     name: "Witness from Fryazino",
     description:
       "An ordinary observer who accidentally knows too much. Survives by avoiding attention and staying unnoticed.",
-    image: "/cards/witness_fryazino.webp",
+    image: "/cards/imgs/witness_fryazino.webp",
     hp: 3,
     attack: 2,
     abilities: [
@@ -899,14 +934,15 @@ export const characterCards: CardProps[] = [
       { id: "confuse", icon: "❓", title: "Confusing Testimony" },
     ],
     rarity: "common",
-    isOwned: false,
+    count: 0,
+    dustOpacity: 0.2,
   },
   {
     id: "scrat",
     name: "Scrat",
     description:
       "Obsessive prehistoric squirrel endlessly chasing an acorn, causing large-scale environmental chaos unintentionally.",
-    image: "/cards/scrat.webp",
+    image: "/cards/imgs/scrat.webp",
     hp: 2,
     attack: 4,
     abilities: [
@@ -914,36 +950,39 @@ export const characterCards: CardProps[] = [
       { id: "collapse", icon: "🪨", title: "Chain Reaction Disaster" },
     ],
     rarity: "common",
-    isOwned: false,
+    count: 0,
+    dustOpacity: 0.4,
   },
-  {
-    id: "sweetieFox",
-    name: "Sweetie Fox",
-    description: "You all know who is she.",
-    image: "/cards/sweetiefox.jpg",
-    hp: 3,
-    attack: 2,
-    abilities: [{ id: "porn", icon: "🔞", title: "Film p*rn" }],
-    rarity: "common",
-    isOwned: false,
-  },
-  {
-    id: "dianarider",
-    name: "Diana Rider",
-    description: "You all know who is she.",
-    image: "/cards/dianarider.webp",
-    hp: 3,
-    attack: 2,
-    abilities: [{ id: "porn", icon: "🔞", title: "Film p*rn" }],
-    rarity: "common",
-    isOwned: false,
-  },
+  // {
+  //   id: "sweetieFox",
+  //   name: "Sweetie Fox",
+  //   description: "You all know who is she.",
+  //   image: "/cards/imgs/sweetiefox.jpg",
+  //   hp: 3,
+  //   attack: 2,
+  //   abilities: [{ id: "porn", icon: "🔞", title: "Film p*rn" }],
+  //   rarity: "common",
+  //   count: 0,
+  //   dustOpacity: 0.2,
+  // },
+  // {
+  //   id: "dianarider",
+  //   name: "Diana Rider",
+  //   description: "You all know who is she.",
+  //   image: "/cards/imgs/dianarider.webp",
+  //   hp: 3,
+  //   attack: 2,
+  //   abilities: [{ id: "porn", icon: "🔞", title: "Film p*rn" }],
+  //   rarity: "common",
+  //   count: 0,
+  //   dustOpacity: 0.2,
+  // },
   {
     id: "darth_vader",
     name: "Darth Vader",
     description:
       "A former Jedi turned Sith Lord who wields the dark side of the Force with devastating control and precision.",
-    image: "/cards/darthvader.jpg",
+    image: "/cards/imgs/darthvader.jpg",
     hp: 9,
     attack: 9,
     abilities: [
@@ -951,16 +990,17 @@ export const characterCards: CardProps[] = [
       { id: "force_push", icon: "🌪️", title: "Force Push" },
     ],
     rarity: "legendary",
-    isOwned: false,
-    foilMask: "/cards/darthvader_m.png",
+    count: 0,
+    foilMask: "/cards/m/darthvader_m.png",
     texture: "/patterns/cube3d.png",
+    dustOpacity: 0.4,
   },
   {
     id: "magikarp",
     name: "Magikarp",
     description:
       "A weak but persistent Pokémon known for its survival instinct and unexpected potential evolution.",
-    image: "/cards/magikarp.webp",
+    image: "/cards/imgs/magikarp.webp",
     hp: 2,
     attack: 1,
     abilities: [
@@ -968,14 +1008,14 @@ export const characterCards: CardProps[] = [
       { id: "flop", icon: "🐟", title: "Flop Around" },
     ],
     rarity: "common",
-    isOwned: true,
+    count: 1,
   },
   {
     id: "ak47",
     name: "AK-47",
     description:
       "A highly reliable assault rifle known for durability, simplicity, and lethal efficiency in combat scenarios.",
-    image: "/cards/ak47.jpg",
+    image: "/cards/imgs/ak47.jpg",
     hp: 3,
     attack: 9,
     abilities: [
@@ -983,15 +1023,15 @@ export const characterCards: CardProps[] = [
       { id: "suppress", icon: "💥", title: "Suppression Fire" },
     ],
     rarity: "rare",
-    isOwned: false,
-    foilMask: "/cards/ak47_m.png",
+    count: 0,
+    foilMask: "/cards/m/ak47_m.png",
   },
   {
     id: "bakugo",
     name: "Katsuki Bakugo",
     description:
       "Explosive combat specialist with aggressive fighting style and extreme combat drive.",
-    image: "/cards/bakugo.jpg",
+    image: "/cards/imgs/bakugo.jpg",
     hp: 7,
     attack: 9,
     abilities: [
@@ -999,16 +1039,17 @@ export const characterCards: CardProps[] = [
       { id: "howitzer", icon: "🔥", title: "Howitzer Impact" },
     ],
     rarity: "epic",
-    isOwned: true,
-    foilMask: "/cards/bakugo_m.png",
+    count: 1,
+    foilMask: "/cards/m/bakugo_m.png",
     texture: "/patterns/circles.png",
+    dustOpacity: 0.4,
   },
   {
     id: "hitori_gotoh",
     name: "Hitori Gotoh",
     description:
       "An extremely introverted guitarist who grows stronger through music, anxiety, and unexpected performance bursts.",
-    image: "/cards/hitori.jpg",
+    image: "/cards/imgs/hitori.jpg",
     hp: 4,
     attack: 7,
     abilities: [
@@ -1016,14 +1057,15 @@ export const characterCards: CardProps[] = [
       { id: "panic_mode", icon: "😵", title: "Anxiety Overdrive" },
     ],
     rarity: "common",
-    isOwned: true,
+    count: 1,
+    dustOpacity: 0.2,
   },
   {
     id: "reze",
     name: "Reze",
     description:
       "A charming and deadly hybrid with explosive abilities and deceptive combat style.",
-    image: "/cards/reze.png",
+    image: "/cards/imgs/reze.png",
     hp: 7,
     attack: 9,
     abilities: [
@@ -1031,16 +1073,17 @@ export const characterCards: CardProps[] = [
       { id: "assassination", icon: "🗡️", title: "Silent Kill" },
     ],
     rarity: "epic",
-    isOwned: true,
-    foilMask: "/cards/reze_m.png",
+    count: 1,
+    foilMask: "/cards/m/reze_m.png",
     texture: "/patterns/circles.png",
+    dustOpacity: 0.2,
   },
   {
     id: "hatsune_miku",
     name: "Hatsune Miku",
     description:
       "A virtual idol who influences reality through sound, rhythm, and mass perception control.",
-    image: "/cards/miku.jpg",
+    image: "/cards/imgs/miku.jpg",
     hp: 6,
     attack: 6,
     abilities: [
@@ -1048,10 +1091,11 @@ export const characterCards: CardProps[] = [
       { id: "hologram", icon: "🌐", title: "Holographic Overload" },
     ],
     rarity: "epic",
-    isOwned: true,
-    foilMask: "/cards/miku_m.png",
+    count: 1,
+    foilMask: "/cards/m/miku_m.png",
     // texture: "/patterns/cube3d.png",
     texture: "/patterns/jellytriangles.jpg",
+    dustOpacity: 0.2,
   },
 ];
 
@@ -1061,31 +1105,31 @@ export const KsufMembers: CardProps[] = [
     name: "Kawaii Potato",
     description:
       "Amazing incredible powerful insomniac unbelievable Mathew Potato from KSUF",
-    image: "/cards/kawaii_potato.jpg",
+    image: "/cards/imgs/kawaii_potato.jpg",
     hp: 2,
     attack: 2,
     abilities: [{ id: "playGD", icon: "🔥", title: "Play Geomery Dash" }],
     rarity: "common",
-    isOwned: true,
+    count: 1,
   },
   {
     id: "glist",
     name: "Glist",
     description:
       "Amazing incredible powerful insomniac unbelievable Danya Glist from KSUF",
-    image: "/cards/glist.jpg",
+    image: "/cards/imgs/glist.jpg",
     hp: 1,
     attack: 3,
     abilities: [{ id: "scythe", icon: "⚔️", title: "Scythe attack" }],
     rarity: "common",
-    isOwned: true,
+    count: 1,
   },
   {
     id: "ovsyankuh",
     name: "Ovsyankuh",
     description:
       "Amazing incredible powerful insomniac unbelievable Vasya Ovsyankuh from KSUF",
-    image: "/cards/ovsyankuh.jpg",
+    image: "/cards/imgs/ovsyankuh.jpg",
     hp: 2,
     attack: 2,
     abilities: [
@@ -1093,48 +1137,48 @@ export const KsufMembers: CardProps[] = [
       { id: "football", icon: "⚽", title: "Watch football" },
     ],
     rarity: "common",
-    isOwned: true,
+    count: 1,
   },
   {
     id: "mipoh",
     name: "Mipoh",
     description: "Who added him?",
-    image: "/cards/mipoh.jpg",
+    image: "/cards/imgs/mipoh.jpg",
     hp: 2,
     attack: 1,
     abilities: [{ id: "importunity", icon: "😰", title: "Annoy anyone" }],
     rarity: "common",
-    isOwned: true,
+    count: 1,
   },
   {
     id: "sanek",
     name: "Sanek",
     description: "Just Sanek",
-    image: "/cards/sanek.jpg",
+    image: "/cards/imgs/sanek.jpg",
     hp: 1,
     attack: 2,
     abilities: [{ id: "playGD", icon: "🔥", title: "Play Geomery Dash" }],
     rarity: "common",
-    isOwned: true,
+    count: 1,
   },
   {
     id: "kaurixz",
     name: "KauriXZ",
     description:
       "Amazing incredible powerful insomniac unbelievable Dimas KauriZXC from KSUF",
-    image: "/cards/kaurixz.jpg",
+    image: "/cards/imgs/kaurixz.jpg",
     hp: 3,
     attack: 3,
     abilities: [{ id: "anime", icon: "🔞", title: "Watch anime" }],
     rarity: "common",
-    isOwned: true,
+    count: 1,
   },
   {
     id: "floweredhead",
     name: "Flowered Head",
     description:
       "Amazing incredible powerful insomniac unbelievable Nikolas Flowered Head from KSUF",
-    image: "/cards/fh.jpg",
+    image: "/cards/imgs/fh.jpg",
     hp: 3,
     attack: 3,
     abilities: [
@@ -1142,14 +1186,14 @@ export const KsufMembers: CardProps[] = [
       { id: "monkey", icon: "🐒", title: "Monkey flip" },
     ],
     rarity: "common",
-    isOwned: true,
+    count: 1,
   },
   {
     id: "musculus",
     name: "Musculus",
     description:
       "Amazing incredible powerful insomniac unbelievable Serega Musculus Head from KSUF",
-    image: "/cards/musculus.jpg",
+    image: "/cards/imgs/musculus.jpg",
     hp: 4,
     attack: 4,
     abilities: [
@@ -1157,14 +1201,14 @@ export const KsufMembers: CardProps[] = [
       { id: "disappear", icon: "💨", title: "Magical disappearing" },
     ],
     rarity: "common",
-    isOwned: true,
+    count: 1,
   },
   {
     id: "qra",
     name: "QRA",
     description:
       "Amazing incredible powerful insomniac unbelievable Danek QRA Head of KSUF",
-    image: "/cards/qra.jpg",
+    image: "/cards/imgs/qra.jpg",
     hp: 2,
     attack: 2,
     abilities: [
@@ -1172,17 +1216,17 @@ export const KsufMembers: CardProps[] = [
       { id: "disappear", icon: "💨", title: "Magical disappearing" },
     ],
     rarity: "common",
-    isOwned: true,
+    count: 1,
   },
   {
     id: "igor",
     name: "Igor",
     description: "Just Igor",
-    image: "/cards/igor.jpg",
+    image: "/cards/imgs/igor.jpg",
     hp: 2,
     attack: 2,
     abilities: [{ id: "football", icon: "⚽", title: "Watch football" }],
     rarity: "common",
-    isOwned: true,
+    count: 1,
   },
 ];

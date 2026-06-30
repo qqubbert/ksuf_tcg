@@ -267,6 +267,8 @@
   pointer-events: none;
   z-index: 5;
 
+  opacity: var(--dust-opacity);
+
   background:
     radial-gradient(
       circle at var(--mx) var(--my),

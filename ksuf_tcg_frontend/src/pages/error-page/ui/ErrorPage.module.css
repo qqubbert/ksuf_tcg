@@ -1,0 +1,15 @@
+.errPage {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.errNumber {
+  font-size: 150px;
+}
+
+.errText {
+  font-size: 25px;
+}

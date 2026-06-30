@@ -1,13 +1,14 @@
 import { useRef, useState } from "react";
-import type { CardProps } from "../../model/types";
+import type { CardProps } from "../../../../shared/types/CardTypes/types";
 import styles from "./Card.module.css";
 import { rarityStyle } from "@shared/data";
 
 type Props = {
   data: CardProps;
+  useMouseEffect?: boolean;
 };
 
-export const Card = ({ data }: Props) => {
+export const Card = ({ data, useMouseEffect = true }: Props) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const cardRef = useRef<HTMLDivElement>(null);
@@ -15,6 +16,8 @@ export const Card = ({ data }: Props) => {
   const mask = data.foilMask;
 
   const handleMouseMove = (e: React.MouseEvent) => {
+    if (!useMouseEffect) return;
+
     const el = cardRef.current;
     if (!el) return;
 
@@ -53,6 +56,8 @@ export const Card = ({ data }: Props) => {
 
     setIsHovered(false);
 
+    if (!useMouseEffect) return;
+
     el.style.transform = `
     perspective(900px)
     rotateX(0deg)
@@ -88,6 +93,7 @@ export const Card = ({ data }: Props) => {
       style={
         {
           "--aura-color": rarityStyle[data.rarity].color,
+          "--dust-opacity": data.dustOpacity != null ? data.dustOpacity : 1,
         } as React.CSSProperties
       }
     >

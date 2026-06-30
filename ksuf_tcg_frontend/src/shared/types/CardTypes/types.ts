@@ -17,8 +17,11 @@ export type CardProps = {
 
   rarity: "common" | "rare" | "epic" | "legendary";
 
-  isOwned: boolean;
+  // isOwned: boolean;
+  count: number;
 
   foilMask?: string;
   texture?: string;
+
+  dustOpacity?: number;
 };

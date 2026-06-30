@@ -1,0 +1,61 @@
+.header {
+  width: 100%;
+  height: var(--header-height);
+
+  background-color: rgb(19, 19, 19);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 10px;
+  gap: 10px;
+
+  user-select: none;
+}
+
+.leftSide, .rightSide {
+  display: flex;
+  gap: 10px;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pageLink {
+  color: white;
+
+  transition: color 0.12s ease-in-out;
+  
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &:hover {
+    color: rgb(159, 223, 243);
+  }
+}
+
+.money {
+  /* padding: 0 10px; */
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.userPic {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}

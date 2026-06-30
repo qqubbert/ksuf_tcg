@@ -1,8 +1,8 @@
 import styles from "./CollectionToolbar.module.css";
 
 type Props = {
-  mode: "owned" | "all";
-  setMode: (mode: "owned" | "all") => void;
+  mode: "owned" | "other";
+  setMode: (mode: "owned" | "other") => void;
   ownedCount: number;
   totalCount: number;
 };
@@ -23,8 +23,8 @@ export const CollectionToolbar = ({
       </button>
 
       <button
-        className={styles.button + " " + (mode === "all" ? styles.selected : "")}
-        onClick={() => setMode("all")}
+        className={styles.button + " " + (mode === "other" ? styles.selected : "")}
+        onClick={() => setMode("other")}
       >
         All
       </button>

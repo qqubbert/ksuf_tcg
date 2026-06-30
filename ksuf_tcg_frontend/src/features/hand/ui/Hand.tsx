@@ -1,17 +1,18 @@
-import { Card } from "@entities/card";
-import { characterCards } from "@shared/data";
 import styles from "./Hand.module.css";
-import { useState } from "react";
-import type { CardProps } from "@entities/card";
 
-export const Hand = () => {
+import { useState } from "react";
+
+import { Card, type CardProps } from "@entities";
+import { characterCards } from "@shared/data";
+
+export const Hand = ({}) => {
   const VISIBLE_COUNT = 9;
 
   const [activeId, setActiveId] = useState<string | null>(null);
 
   const [startIndex, setStartIndex] = useState(0);
 
-  const ownedCards = characterCards.filter((card) => card.isOwned);
+  const ownedCards = characterCards.filter((card) => card.count > 0);
   const count = ownedCards.length;
 
   const visibleCards = ownedCards.slice(startIndex, startIndex + VISIBLE_COUNT);
@@ -52,13 +53,6 @@ export const Hand = () => {
         {visibleCards.map((card: CardProps, index: number) => {
           const isActive = activeId === card.id;
 
-          const globalIndex = startIndex + index;
-
-          const fullStep = count > 1 ? 1 / (count - 1) : 0;
-
-          const centerIndex = startIndex + index;
-          const localCenter = startIndex + VISIBLE_COUNT / 2;
-
           const offsetFromCenter = index - (visibleCards.length - 1) / 2;
 
           const angle = offsetFromCenter * (maxAngle / VISIBLE_COUNT);
@@ -67,11 +61,6 @@ export const Hand = () => {
 
           // максимум подъёма краёв
           const center = (visibleCards.length - 1) / 2;
-
-          // const offsetFromCenter = index - center;
-
-          const normalized =
-            visibleCards.length > 1 ? index / (visibleCards.length - 1) : 0;
 
           const arcHeight = 20;
 

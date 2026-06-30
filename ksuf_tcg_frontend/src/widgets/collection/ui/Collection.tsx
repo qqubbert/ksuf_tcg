@@ -5,7 +5,7 @@ import { CardGrid } from "@features/CardGrid";
 import { CollectionToolbar } from "@features/CollectionToolbar";
 import styles from "./Collection.module.css";
 
-type CollectionMode = "owned" | "all";
+type CollectionMode = "owned" | "other";
 
 type Props = {
   showToolbar?: boolean;
@@ -16,11 +16,11 @@ export const Collection = ({ showToolbar = true }: Props) => {
 
   const cards = useMemo(() => {
     return mode === "owned"
-      ? characterCards.filter((c) => c.isOwned)
+      ? characterCards.filter((c) => c.count > 0)
       : characterCards;
   }, [mode]);
 
-  const ownedCount = characterCards.filter((c) => c.isOwned).length;
+  const ownedCount = characterCards.filter((c) => c.count > 0).length;
 
   return (
     <div className={styles.wrapper}>
@@ -33,7 +33,7 @@ export const Collection = ({ showToolbar = true }: Props) => {
         />
       )}
 
-      <CardGrid cards={cards} />
+      <CardGrid cards={cards} mode={mode}/>
     </div>
   );
 };

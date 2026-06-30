@@ -18,6 +18,7 @@ export default defineConfig({
       "@components": path.resolve(__dirname, "src/shared/components"),
       "@shaders": path.resolve(__dirname, "src/shared/shaders"),
       "@hooks": path.resolve(__dirname, "src/shared/hooks"),
+      "@types": path.resolve(__dirname, "src/shared/types"),
     },
   },
 });

@@ -3,6 +3,8 @@
   gap: 12px;
   align-items: center;
   margin-bottom: 16px;
+  padding: 10px 24px;
+  padding-bottom: 0;
 }
 
 .count {
