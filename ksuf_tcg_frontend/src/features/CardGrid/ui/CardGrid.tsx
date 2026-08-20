@@ -22,13 +22,13 @@ export const CardGrid = ({
 
   const width = useElementWidth(parentRef);
 
-  const columnCount = Math.max(
+  const columnCount = Math.min(5, Math.max(
     1,
     Math.floor(
       (width + GAP) /
         (CARD_MIN_WIDTH + GAP),
     ),
-  );
+  ));
 
   const rowCount = Math.ceil(
     cards.length / columnCount,
