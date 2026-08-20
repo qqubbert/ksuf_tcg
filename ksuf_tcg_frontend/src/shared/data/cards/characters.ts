@@ -33,7 +33,7 @@ export const characterCards: CardProps[] = [
     rarity: "legendary",
     count: 1,
     foilMask: "/cards/m/frieren_m.webp",
-    texture: "/patterns/illusion.webp",
+    texture: "/patterns/illusion.avif",
   },
 
   {
@@ -83,7 +83,7 @@ export const characterCards: CardProps[] = [
     rarity: "legendary",
     count: 0,
     foilMask: "/cards/m/makima_m.webp",
-    texture: "/patterns/jellytriangles.webp",
+    texture: "/patterns/jellytriangles.jpg",
   },
 
   {
@@ -100,7 +100,7 @@ export const characterCards: CardProps[] = [
     rarity: "legendary",
     count: 0,
     foilMask: "/cards/m/naruto_m.webp",
-    texture: "/patterns/illusion.webp",
+    texture: "/patterns/illusion.avif",
     dustOpacity: 0.25,
   },
 
@@ -349,7 +349,7 @@ export const characterCards: CardProps[] = [
     rarity: "rare",
     count: 1,
     foilMask: "/cards/m/rebecca_m.webp",
-    texture: "/patterns/cube3d.webp",
+    texture: "/patterns/cube3d.png",
   },
   {
     id: "l",
@@ -382,7 +382,7 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "rare",
     count: 1,
-    texture: "/patterns/circles.webp",
+    texture: "/patterns/circles.png",
     foilMask: "/cards/m/tanjiro_m.webp",
   },
 
@@ -418,7 +418,7 @@ export const characterCards: CardProps[] = [
     rarity: "legendary",
     count: 0,
     foilMask: "/cards/m/homelander_m.webp",
-    texture: "/patterns/cube3d.webp",
+    texture: "/patterns/cube3d.png",
     dustOpacity: 0,
   },
 
@@ -568,7 +568,7 @@ export const characterCards: CardProps[] = [
     rarity: "epic",
     count: 0,
     foilMask: "/cards/m/vergil_m.webp",
-    texture: "/patterns/illusion.webp",
+    texture: "/patterns/illusion.avif",
     dustOpacity: 0.2,
   },
   {
@@ -586,7 +586,7 @@ export const characterCards: CardProps[] = [
     rarity: "epic",
     count: 1,
     foilMask: "/cards/m/luffy_m.webp",
-    texture: "/patterns/cube3d.webp",
+    texture: "/patterns/cube3d.png",
     dustOpacity: 0.2,
   },
   {
@@ -717,7 +717,7 @@ export const characterCards: CardProps[] = [
     rarity: "rare",
     count: 1,
     foilMask: "/cards/m/gustavo_fring_m.webp",
-    texture: "/patterns/illusion.webp",
+    texture: "/patterns/illusion.avif",
     dustOpacity: 0.1,
   },
   {
@@ -751,7 +751,7 @@ export const characterCards: CardProps[] = [
     rarity: "rare",
     count: 0,
     foilMask: "/cards/m/elliot_alderson_m.webp",
-    texture: "/patterns/zigzag.webp",
+    texture: "/patterns/zigzag.avif",
     dustOpacity: 0.2,
   },
   {
@@ -852,7 +852,7 @@ export const characterCards: CardProps[] = [
     rarity: "epic",
     count: 1,
     foilMask: "/cards/m/pucci_cmoon_m.webp",
-    texture: "/patterns/circles.webp",
+    texture: "/patterns/circles.png",
     dustOpacity: 0.3,
   },
   {
@@ -870,7 +870,7 @@ export const characterCards: CardProps[] = [
     rarity: "legendary",
     count: 0,
     foilMask: "/cards/m/pucci_made_in_heaven_m.webp",
-    texture: "/patterns/circles.webp",
+    texture: "/patterns/circles.png",
     dustOpacity: 0.3,
   },
   {
@@ -919,7 +919,7 @@ export const characterCards: CardProps[] = [
     rarity: "epic",
     count: 1,
     foilMask: "/cards/m/john_wick_m.webp",
-    texture: "/patterns/cube3d.webp",
+    texture: "/patterns/cube3d.png",
     dustOpacity: 0.2,
   },
   {
@@ -969,7 +969,7 @@ export const characterCards: CardProps[] = [
     rarity: "legendary",
     count: 0,
     foilMask: "/cards/m/darthvader_m.webp",
-    texture: "/patterns/cube3d.webp",
+    texture: "/patterns/cube3d.png",
     dustOpacity: 0.4,
   },
   {
@@ -1018,7 +1018,7 @@ export const characterCards: CardProps[] = [
     rarity: "epic",
     count: 1,
     foilMask: "/cards/m/bakugo_m.webp",
-    texture: "/patterns/circles.webp",
+    texture: "/patterns/circles.png",
     dustOpacity: 0.4,
   },
   {
@@ -1052,7 +1052,7 @@ export const characterCards: CardProps[] = [
     rarity: "epic",
     count: 1,
     foilMask: "/cards/m/reze_m.webp",
-    texture: "/patterns/circles.webp",
+    texture: "/patterns/circles.png",
     dustOpacity: 0.2,
   },
   {
@@ -1070,8 +1070,8 @@ export const characterCards: CardProps[] = [
     rarity: "epic",
     count: 1,
     foilMask: "/cards/m/miku_m.webp",
-    // texture: "/patterns/cube3d.webp",
-    texture: "/patterns/jellytriangles.webp",
+    // texture: "/patterns/cube3d.png",
+    texture: "/patterns/jellytriangles.jpg",
     dustOpacity: 0.2,
   },
 ];

@@ -42,8 +42,8 @@ export const Card = memo(({ data, useMouseEffect = true }: Props) => {
 
       const { x, y } = mousePosition.current;
 
-      const rotateX = (y / rect.height - 0.5) * -18;
-      const rotateY = (x / rect.width - 0.5) * 18;
+      const rotateX = (y / rect.height - 0.5) * -32;
+      const rotateY = (x / rect.width - 0.5) * 32;
 
       //   el.style.transform = `
       //   perspective(900px)
@@ -54,7 +54,7 @@ export const Card = memo(({ data, useMouseEffect = true }: Props) => {
 
       el.style.setProperty("--rotate-x", `${rotateX}deg`);
       el.style.setProperty("--rotate-y", `${rotateY}deg`);
-      el.style.setProperty("--scale", `1.03`);
+      el.style.setProperty("--scale", `1.1`);
 
       el.style.setProperty("--mx", `${x}px`);
       el.style.setProperty("--my", `${y}px`);
@@ -124,28 +124,35 @@ export const Card = memo(({ data, useMouseEffect = true }: Props) => {
       }
     >
       <div className={styles.dust}></div>
-      {/* <div className={styles.lightNoise} /> */}
+      <div className={styles.lightNoise} />
 
-      {data.texture && (
+      {data.rarity !== "common" && (
         <>
-          <div
-            className={styles.texture}
-            style={
-              {
-                backgroundImage: `url(${data.texture})`,
-                ...maskStyle,
-              } as React.CSSProperties
-            }
-          ></div>
-          <div className={styles.textureLight} style={maskStyle} />
+          {data.texture && (
+            <>
+              <div
+                className={styles.texture}
+                style={
+                  {
+                    backgroundImage: `url(${data.texture})`,
+                    ...maskStyle,
+                  } as React.CSSProperties
+                }
+              ></div>
+              <div className={styles.textureLight} style={maskStyle} />
+            </>
+          )}
+          {data.rarity !== "rare" && <div className={styles.foil} style={{ ...maskStyle }} />}
+          {/* {data.rarity === "rare" &&  */}
+          <div className={styles.metallicFoil} style={{ ...maskStyle }} />
+          {/* } */}
         </>
       )}
-      <div className={styles.metallicFoil} style={{ ...maskStyle }} />
-      <div className={styles.foil} style={{ ...maskStyle }} />
       <div className={styles.noise} />
+      {/* {data.rarity === "common" && <div className={styles.specular} />} */}
       <div className={styles.specular} />
 
-      <div className={styles.glow} />
+      {/* <div className={styles.glow} /> */}
 
       <div className={styles.imageWrapper}>
         <img
@@ -195,7 +202,7 @@ export const Card = memo(({ data, useMouseEffect = true }: Props) => {
           )`,
           ...maskStyle,
         }}
-      />
+      ></div>
     </div>
   );
 });

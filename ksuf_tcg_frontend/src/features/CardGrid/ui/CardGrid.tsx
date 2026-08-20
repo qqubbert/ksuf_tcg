@@ -12,7 +12,7 @@ type Props = {
 
 const CARD_MIN_WIDTH = 260;
 const GAP = 8;
-const ROW_HEIGHT = 400;
+const ROW_HEIGHT = 410;
 
 export const CardGrid = ({
   cards,
@@ -22,7 +22,7 @@ export const CardGrid = ({
 
   const width = useElementWidth(parentRef);
 
-  const columnCount = Math.min(5, Math.max(
+  const columnCount = Math.min(6, Math.max(
     1,
     Math.floor(
       (width + GAP) /
@@ -37,8 +37,8 @@ export const CardGrid = ({
   const rowVirtualizer = useWindowVirtualizer({
     count: rowCount,
     estimateSize: () => ROW_HEIGHT,
-    overscan: 1,
-    scrollMargin: 8,
+    overscan: 0,
+    scrollMargin: 16,
   });
 
   return (
