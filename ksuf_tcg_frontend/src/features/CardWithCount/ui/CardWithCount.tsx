@@ -24,23 +24,23 @@ export const CardWithCount = ({ data, mode = "owned" }: Props) => {
       {isCollection && count > 1 && (
         <>
           <div className={styles.stack}>
-            {/* {Array.from({ length: Math.min(count, MAX_LAYERS) }).map((_, i) => ( */}
+            {Array.from({ length: Math.min(count, MAX_LAYERS) }).map((_, i) => (
               <div
-                // key={i}
+                key={i}
                 className={styles.layer}
-                // style={{
-                //   transform: `
-                //     translate(${i * 3}px, ${-i * 3}px)
-                //     rotate(${i * 1.5}deg)
-                //     scale(${1 - i * 0.02})
-                //   `,
-                //   zIndex: i,
-                // }}
+                style={{
+                  transform: `
+                    translate(${i * 3}px, ${-i * 3}px)
+                    rotate(${i * 1.5}deg)
+                    scale(${1 - i * 0.02})
+                  `,
+                  zIndex: i,
+                }}
               >
                 <Card data={data} />
               </div>
             ))
-            {/* } */}
+            }
           </div>
 
           {count > MAX_LAYERS && (

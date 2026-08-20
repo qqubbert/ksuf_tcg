@@ -5,7 +5,8 @@
 }
 
 .stack {
-  position: relative;
+  position: absolute;
+  top: 0;
 }
 
 .layer {
@@ -23,4 +24,5 @@
   font-size: 12px;
   color: white;
   opacity: 0.7;
+  z-index: 10;
 }

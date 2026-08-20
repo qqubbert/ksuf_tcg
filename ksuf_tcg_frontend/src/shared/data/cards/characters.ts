@@ -6,7 +6,7 @@ export const characterCards: CardProps[] = [
     name: "Jotaro Kujo",
     description:
       "Stoic Stand user with overwhelming physical strength and precision.",
-    image: "/cards/imgs/jotaro.jpg",
+    image: "/cards/imgs/jotaro.webp",
     hp: 9,
     attack: 8,
     abilities: [
@@ -15,24 +15,25 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "legendary",
     count: 1,
-    foilMask: "/cards/m/jotaro_m.png",
+    foilMask: "/cards/m/jotaro_m.webp",
+    dustOpacity: 0,
   },
 
   {
     id: "frieren",
     name: "Frieren",
     description: "Ancient mage who studies the nature of magic and time.",
-    image: "/cards/imgs/frieren.jpg",
+    image: "/cards/imgs/frieren.webp",
     hp: 6,
     attack: 9,
     abilities: [
       { id: "magic", icon: "✨", title: "Ancient Spellcasting" },
       { id: "analysis", icon: "📚", title: "Mana Analysis" },
     ],
-    rarity: "epic",
+    rarity: "legendary",
     count: 1,
-    foilMask: "/cards/m/frieren_m.png",
-    texture: "/patterns/illusion.avif",
+    foilMask: "/cards/m/frieren_m.webp",
+    texture: "/patterns/illusion.webp",
   },
 
   {
@@ -48,7 +49,7 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "rare",
     count: 4,
-    foilMask: "/cards/m/denji_m.png",
+    foilMask: "/cards/m/denji_m.webp",
     dustOpacity: 0.3,
   },
 
@@ -56,7 +57,7 @@ export const characterCards: CardProps[] = [
     id: "mikasa",
     name: "Mikasa Ackerman",
     description: "Elite soldier with extreme agility and combat instincts.",
-    image: "/cards/imgs/mikasa.jpg",
+    image: "/cards/imgs/mikasa.webp",
     hp: 7,
     attack: 8,
     abilities: [
@@ -72,7 +73,7 @@ export const characterCards: CardProps[] = [
     name: "Makima",
     description:
       "Mysterious control devil manipulating humans and devils alike.",
-    image: "/cards/imgs/makima.jpg",
+    image: "/cards/imgs/makima.webp",
     hp: 10,
     attack: 7,
     abilities: [
@@ -81,15 +82,15 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "legendary",
     count: 0,
-    foilMask: "/cards/m/makima_m.png",
-    texture: "/patterns/jellytriangles.jpg",
+    foilMask: "/cards/m/makima_m.webp",
+    texture: "/patterns/jellytriangles.webp",
   },
 
   {
     id: "naruto",
     name: "Naruto Uzumaki",
     description: "Ninja with boundless energy and Nine-Tails power.",
-    image: "/cards/imgs/naruto.jpg",
+    image: "/cards/imgs/naruto.webp",
     hp: 8,
     attack: 8,
     abilities: [
@@ -98,8 +99,8 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "legendary",
     count: 0,
-    foilMask: "/cards/m/naruto_m.png",
-    texture: "/patterns/illusion.jpg",
+    foilMask: "/cards/m/naruto_m.webp",
+    texture: "/patterns/illusion.webp",
     dustOpacity: 0.25,
   },
 
@@ -107,7 +108,7 @@ export const characterCards: CardProps[] = [
     id: "tyler",
     name: "Tyler Durden",
     description: "Anarchic symbol of rebellion and psychological collapse.",
-    image: "/cards/imgs/tyler.jpg",
+    image: "/cards/imgs/tyler.webp",
     hp: 6,
     attack: 9,
     abilities: [
@@ -123,7 +124,7 @@ export const characterCards: CardProps[] = [
     id: "walter",
     name: "Walter White",
     description: "Chemistry teacher turned strategic drug empire architect.",
-    image: "/cards/imgs/walter.jpg",
+    image: "/cards/imgs/walter.webp",
     hp: 7,
     attack: 8,
     abilities: [
@@ -132,7 +133,7 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "rare",
     count: 0,
-    foilMask: "/cards/m/walter_m.png",
+    foilMask: "/cards/m/walter_m.webp",
     dustOpacity: 0.35,
   },
 
@@ -149,7 +150,7 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "rare",
     count: 1,
-    foilMask: "/cards/m/saul_m.png",
+    foilMask: "/cards/m/saul_m.webp",
     dustOpacity: 0.3,
   },
 
@@ -157,7 +158,7 @@ export const characterCards: CardProps[] = [
     id: "mike",
     name: "Mike Ehrmantraut",
     description: "Professional fixer with military-level discipline.",
-    image: "/cards/imgs/mike.jpeg",
+    image: "/cards/imgs/mike.webp",
     hp: 9,
     attack: 7,
     abilities: [
@@ -166,7 +167,7 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "rare",
     count: 1,
-    foilMask: "/cards/m/mike_m.png",
+    foilMask: "/cards/m/mike_m.webp",
     dustOpacity: 0,
   },
 
@@ -174,7 +175,7 @@ export const characterCards: CardProps[] = [
     id: "berlin",
     name: "Berlin",
     description: "Charismatic and ruthless strategist from a heist crew.",
-    image: "/cards/imgs/berlin.jpg",
+    image: "/cards/imgs/berlin.webp",
     hp: 7,
     attack: 8,
     abilities: [
@@ -183,7 +184,7 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "rare",
     count: 0,
-    foilMask: "/cards/m/berlin_m.png",
+    foilMask: "/cards/m/berlin_m.webp",
     dustOpacity: 0.3,
   },
   {
@@ -191,7 +192,7 @@ export const characterCards: CardProps[] = [
     name: "Power",
     description:
       "Blood Devil with chaotic behavior and unpredictable combat style.",
-    image: "/cards/imgs/power.png",
+    image: "/cards/imgs/power.webp",
     hp: 7,
     attack: 9,
     abilities: [
@@ -205,7 +206,7 @@ export const characterCards: CardProps[] = [
     id: "midoriya",
     name: "Izuku Midoriya",
     description: "Hero-in-training with analytical mind and inherited power.",
-    image: "/cards/imgs/midoriya.jpg",
+    image: "/cards/imgs/midoriya.webp",
     hp: 7,
     attack: 8,
     abilities: [
@@ -214,14 +215,14 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "epic",
     count: 1,
-    foilMask: "/cards/m/midoriya_m.png",
+    foilMask: "/cards/m/midoriya_m.webp",
   },
   {
     id: "asuka",
     name: "Asuka Langley",
     description:
       "Elite EVA pilot with high confidence and aggressive combat style.",
-    image: "/cards/imgs/asuka.jpg",
+    image: "/cards/imgs/asuka.webp",
     hp: 7,
     attack: 8,
     abilities: [
@@ -237,7 +238,7 @@ export const characterCards: CardProps[] = [
     name: "Rei Ayanami",
     description:
       "Mysterious EVA pilot with calm emotional profile and high synchronization.",
-    image: "/cards/imgs/rei.png",
+    image: "/cards/imgs/rei.webp",
     hp: 6,
     attack: 7,
     abilities: [
@@ -252,7 +253,7 @@ export const characterCards: CardProps[] = [
     id: "eren",
     name: "Eren Yeager",
     description: "Titan shifter driven by destruction and freedom.",
-    image: "/cards/imgs/eren.jpg",
+    image: "/cards/imgs/eren.webp",
     hp: 9,
     attack: 10,
     abilities: [
@@ -261,7 +262,7 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "epic",
     count: 0,
-    foilMask: "/cards/m/eren_m.png",
+    foilMask: "/cards/m/eren_m.webp",
     dustOpacity: 0.3,
   },
   {
@@ -278,7 +279,7 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "rare",
     count: 1,
-    foilMask: "/cards/m/pomni_m.png",
+    foilMask: "/cards/m/pomni_m.webp",
   },
 
   {
@@ -295,7 +296,7 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "epic",
     count: 1,
-    foilMask: "/cards/m/caine_m.png",
+    foilMask: "/cards/m/caine_m.webp",
     dustOpacity: 0.2,
   },
   {
@@ -303,7 +304,7 @@ export const characterCards: CardProps[] = [
     name: "Senku Ishigami",
     description:
       "Scientific genius rebuilding civilization through pure logic and chemistry.",
-    image: "/cards/imgs/senku.jpg",
+    image: "/cards/imgs/senku.webp",
     hp: 6,
     attack: 7,
     abilities: [
@@ -312,7 +313,7 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "rare",
     count: 1,
-    foilMask: "/cards/m/senku_m.png",
+    foilMask: "/cards/m/senku_m.webp",
   },
 
   {
@@ -320,7 +321,7 @@ export const characterCards: CardProps[] = [
     name: "DIO",
     description:
       "Vampiric Stand user with overwhelming ambition and time manipulation.",
-    image: "/cards/imgs/dio.jpg",
+    image: "/cards/imgs/dio.webp",
     hp: 9,
     attack: 10,
     abilities: [
@@ -329,7 +330,7 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "legendary",
     count: 0,
-    foilMask: "/cards/m/dio_m.png",
+    foilMask: "/cards/m/dio_m.webp",
     dustOpacity: 0.2,
   },
 
@@ -338,7 +339,7 @@ export const characterCards: CardProps[] = [
     name: "Rebecca",
     description:
       "Cyberpunk mercenary optimized for mobility, precision, and high-risk combat.",
-    image: "/cards/imgs/rebecca.png",
+    image: "/cards/imgs/rebecca.webp",
     hp: 7,
     attack: 9,
     abilities: [
@@ -347,15 +348,15 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "rare",
     count: 1,
-    foilMask: "/cards/m/rebecca_m.png",
-    texture: "/patterns/cube3d.png",
+    foilMask: "/cards/m/rebecca_m.webp",
+    texture: "/patterns/cube3d.webp",
   },
   {
     id: "l",
     name: "L",
     description:
       "Master detective relying on deduction and psychological manipulation.",
-    image: "/cards/imgs/l.jpg",
+    image: "/cards/imgs/l.webp",
     hp: 5,
     attack: 6,
     abilities: [
@@ -372,7 +373,7 @@ export const characterCards: CardProps[] = [
     name: "Tanjiro Kamado",
     description:
       "Demon Slayer with heightened senses and adaptive combat style.",
-    image: "/cards/imgs/tanjiro.jpg",
+    image: "/cards/imgs/tanjiro.webp",
     hp: 7,
     attack: 8,
     abilities: [
@@ -381,8 +382,8 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "rare",
     count: 1,
-    texture: "/patterns/circles.png",
-    foilMask: "/cards/m/tanjiro_m.png",
+    texture: "/patterns/circles.webp",
+    foilMask: "/cards/m/tanjiro_m.webp",
   },
 
   {
@@ -390,7 +391,7 @@ export const characterCards: CardProps[] = [
     name: "Guts",
     description:
       "Berserker warrior surviving impossible odds through sheer willpower.",
-    image: "/cards/imgs/guts.jpg",
+    image: "/cards/imgs/guts.webp",
     hp: 9,
     attack: 10,
     abilities: [
@@ -399,7 +400,7 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "epic",
     count: 0,
-    foilMask: "/cards/m/guts_m.png",
+    foilMask: "/cards/m/guts_m.webp",
   },
 
   {
@@ -407,7 +408,7 @@ export const characterCards: CardProps[] = [
     name: "Homelander",
     description:
       "Unstable superhuman with overwhelming power and psychological dominance.",
-    image: "/cards/imgs/homelander.jpg",
+    image: "/cards/imgs/homelander.webp",
     hp: 10,
     attack: 10,
     abilities: [
@@ -416,8 +417,8 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "legendary",
     count: 0,
-    foilMask: "/cards/m/homelander_m.png",
-    texture: "/patterns/cube3d.png",
+    foilMask: "/cards/m/homelander_m.webp",
+    texture: "/patterns/cube3d.webp",
     dustOpacity: 0,
   },
 
@@ -442,7 +443,7 @@ export const characterCards: CardProps[] = [
     name: "Kratos",
     description:
       "God of War driven by vengeance, wielding divine power and brutal force.",
-    image: "/cards/imgs/kratos.avif",
+    image: "/cards/imgs/kratos.webp",
     hp: 10,
     attack: 10,
     abilities: [
@@ -451,7 +452,7 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "epic",
     count: 1,
-    foilMask: "/cards/m/kratos_m.png",
+    foilMask: "/cards/m/kratos_m.webp",
     dustOpacity: 0.3,
   },
 
@@ -460,7 +461,7 @@ export const characterCards: CardProps[] = [
     name: "Spider-Man",
     description:
       "Agile hero with enhanced reflexes, intelligence, and spider-sense.",
-    image: "/cards/imgs/spiderman.jpg",
+    image: "/cards/imgs/spiderman.webp",
     hp: 7,
     attack: 8,
     abilities: [
@@ -469,7 +470,7 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "rare",
     count: 0,
-    foilMask: "/cards/m/spiderman_m.png",
+    foilMask: "/cards/m/spiderman_m.webp",
     dustOpacity: 0.3,
   },
 
@@ -478,7 +479,7 @@ export const characterCards: CardProps[] = [
     name: "Deadpool",
     description:
       "Unpredictable mercenary with regeneration and chaotic combat style.",
-    image: "/cards/imgs/deadpool.avif",
+    image: "/cards/imgs/deadpool.webp",
     hp: 8,
     attack: 9,
     abilities: [
@@ -487,7 +488,7 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "epic",
     count: 0,
-    foilMask: "/cards/m/deadpool_m.png",
+    foilMask: "/cards/m/deadpool_m.webp",
     dustOpacity: 0.2,
   },
 
@@ -496,7 +497,7 @@ export const characterCards: CardProps[] = [
     name: "Batman",
     description:
       "Peak human strategist using preparation, gadgets, and psychological warfare.",
-    image: "/cards/imgs/batman.jpg",
+    image: "/cards/imgs/batman.webp",
     hp: 5,
     attack: 8,
     abilities: [
@@ -541,7 +542,7 @@ export const characterCards: CardProps[] = [
     name: "Saitama",
     description:
       "Hero who defeated every opponent with a single punch, possessing overwhelming and absolute strength.",
-    image: "/cards/imgs/saitama.jpg",
+    image: "/cards/imgs/saitama.webp",
     hp: 10,
     attack: 10,
     abilities: [
@@ -550,14 +551,14 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "legendary",
     count: 1,
-    foilMask: "/cards/m/saitama_m.png",
+    foilMask: "/cards/m/saitama_m.webp",
   },
   {
     id: "vergil",
     name: "Vergil",
     description:
       "Cold and precise swordsman seeking absolute power through disciplined combat.",
-    image: "/cards/imgs/vergil.jpg",
+    image: "/cards/imgs/vergil.webp",
     hp: 8,
     attack: 10,
     abilities: [
@@ -566,8 +567,8 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "epic",
     count: 0,
-    foilMask: "/cards/m/vergil_m.png",
-    texture: "/patterns/illusion.avif",
+    foilMask: "/cards/m/vergil_m.webp",
+    texture: "/patterns/illusion.webp",
     dustOpacity: 0.2,
   },
   {
@@ -575,7 +576,7 @@ export const characterCards: CardProps[] = [
     name: "Monkey D. Luffy",
     description:
       "Energetic pirate with rubber body and unpredictable fighting style.",
-    image: "/cards/imgs/luffy.jpg",
+    image: "/cards/imgs/luffy.webp",
     hp: 7,
     attack: 8,
     abilities: [
@@ -583,9 +584,9 @@ export const characterCards: CardProps[] = [
       { id: "stretch", icon: "🤸", title: "Rubber Body" },
     ],
     rarity: "epic",
-    count: 0,
-    foilMask: "/cards/m/luffy_m.png",
-    texture: "/patterns/cube3d.png",
+    count: 1,
+    foilMask: "/cards/m/luffy_m.webp",
+    texture: "/patterns/cube3d.webp",
     dustOpacity: 0.2,
   },
   {
@@ -593,7 +594,7 @@ export const characterCards: CardProps[] = [
     name: "Shrek",
     description:
       "Unstoppable swamp ogre with extreme durability and dominance in close combat.",
-    image: "/cards/imgs/shrek.jpg",
+    image: "/cards/imgs/shrek.webp",
     hp: 9,
     attack: 7,
     abilities: [
@@ -609,7 +610,7 @@ export const characterCards: CardProps[] = [
     name: "Tun Tun Sahur",
     description:
       "A chaotic meme entity that appears unpredictably and disrupts the flow of battle.",
-    image: "/cards/imgs/tuntun_sahur.jpg",
+    image: "/cards/imgs/tuntun_sahur.webp",
     hp: 3,
     attack: 2,
     abilities: [
@@ -625,7 +626,7 @@ export const characterCards: CardProps[] = [
     name: "Pz. Kpfw. IV Ausf. H",
     description:
       "German medium tank with reliable armor and balanced firepower, effective in sustained engagements.",
-    image: "/cards/imgs/pz_kpfw_4_ausf_h.jpeg",
+    image: "/cards/imgs/pz_kpfw_4_ausf_h.webp",
     hp: 12,
     attack: 8,
     abilities: [
@@ -634,14 +635,14 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "rare",
     count: 0,
-    foilMask: "/cards/m/pz_kpfw_4_ausf_h_m.png",
+    foilMask: "/cards/m/pz_kpfw_4_ausf_h_m.webp",
   },
   {
     id: "sunflower_pvz",
     name: "Sunflower",
     description:
       "Support plant that generates energy over time and strengthens allied defenses indirectly.",
-    image: "/cards/imgs/sunflower_pvz.jpg",
+    image: "/cards/imgs/sunflower_pvz.webp",
     hp: 3,
     attack: 1,
     abilities: [
@@ -657,7 +658,7 @@ export const characterCards: CardProps[] = [
     name: "Blue Screen of Death",
     description:
       "A critical system failure that abruptly halts all activity and leaves everything temporarily unresponsive.",
-    image: "/cards/imgs/bsod.jpg",
+    image: "/cards/imgs/bsod.webp",
     hp: 1,
     attack: 6,
     abilities: [
@@ -673,7 +674,7 @@ export const characterCards: CardProps[] = [
     name: "Creeper",
     description:
       "A silent explosive creature that gets stronger the closer it is to its target.",
-    image: "/cards/imgs/creeper.png",
+    image: "/cards/imgs/creeper.webp",
     hp: 4,
     attack: 8,
     abilities: [
@@ -689,7 +690,7 @@ export const characterCards: CardProps[] = [
     name: "Thomas Shelby",
     description:
       "A brilliant gang leader who dominates through strategy, influence, and calculated risk-taking.",
-    image: "/cards/imgs/tommy_shelby.jpg",
+    image: "/cards/imgs/tommy_shelby.webp",
     hp: 7,
     attack: 8,
     abilities: [
@@ -698,7 +699,7 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "rare",
     count: 1,
-    foilMask: "/cards/m/tommy_shelby_m.png",
+    foilMask: "/cards/m/tommy_shelby_m.webp",
     dustOpacity: 0.4,
   },
   {
@@ -706,7 +707,7 @@ export const characterCards: CardProps[] = [
     name: "Gustavo Fring",
     description:
       "A calm and meticulous crime lord who hides ruthless ambition behind a flawless public image.",
-    image: "/cards/imgs/gustavo_fring.jpg",
+    image: "/cards/imgs/gustavo_fring.webp",
     hp: 7,
     attack: 8,
     abilities: [
@@ -715,8 +716,8 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "rare",
     count: 1,
-    foilMask: "/cards/m/gustavo_fring_m.png",
-    texture: "/patterns/illusion.avif",
+    foilMask: "/cards/m/gustavo_fring_m.webp",
+    texture: "/patterns/illusion.webp",
     dustOpacity: 0.1,
   },
   {
@@ -740,7 +741,7 @@ export const characterCards: CardProps[] = [
     name: "Elliot Alderson",
     description:
       "A brilliant hacker capable of dismantling powerful systems through intelligence and determination.",
-    image: "/cards/imgs/elliot_alderson.jpg",
+    image: "/cards/imgs/elliot_alderson.webp",
     hp: 5,
     attack: 8,
     abilities: [
@@ -749,8 +750,8 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "rare",
     count: 0,
-    foilMask: "/cards/m/elliot_alderson_m.png",
-    texture: "/patterns/zigzag.avif",
+    foilMask: "/cards/m/elliot_alderson_m.webp",
+    texture: "/patterns/zigzag.webp",
     dustOpacity: 0.2,
   },
   {
@@ -767,14 +768,14 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "rare",
     count: 0,
-    foilMask: "/cards/m/jon_snow_m.png",
+    foilMask: "/cards/m/jon_snow_m.webp",
   },
   {
     id: "pennywise",
     name: "Pennywise",
     description:
       "A shape-shifting entity that feeds on fear and manipulates perception to isolate and weaken opponents.",
-    image: "/cards/imgs/pennywise.jpg",
+    image: "/cards/imgs/pennywise.webp",
     hp: 8,
     attack: 9,
     abilities: [
@@ -783,14 +784,14 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "epic",
     count: 1,
-    foilMask: "/cards/m/pennywise_m.png",
+    foilMask: "/cards/m/pennywise_m.webp",
   },
   {
     id: "warden",
     name: "The Warden",
     description:
       "A blind, sensory-driven entity that hunts by sound and vibration, overwhelming anything that disturbs its domain.",
-    image: "/cards/imgs/warden.jpg",
+    image: "/cards/imgs/warden.webp",
     hp: 10,
     attack: 10,
     abilities: [
@@ -799,7 +800,7 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "epic",
     count: 1,
-    foilMask: "/cards/m/warden_m.png",
+    foilMask: "/cards/m/warden_m.webp",
     dustOpacity: 0,
   },
   {
@@ -807,7 +808,7 @@ export const characterCards: CardProps[] = [
     name: "Kurt Cobain",
     description:
       "A fragile yet influential presence that disrupts enemy morale and weakens coordinated actions over time.",
-    image: "/cards/imgs/kurt_cobain.jpg",
+    image: "/cards/imgs/kurt_cobain.webp",
     hp: 3,
     attack: 2,
     abilities: [
@@ -823,7 +824,7 @@ export const characterCards: CardProps[] = [
     name: "Enrico Pucci (Whitesnake)",
     description:
       "Devoted priest with a Stand capable of extracting and manipulating memories and abilities.",
-    image: "/cards/imgs/pucci_whitesnake.jpg",
+    image: "/cards/imgs/pucci_whitesnake.webp",
     hp: 7,
     attack: 8,
     abilities: [
@@ -832,7 +833,7 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "epic",
     count: 1,
-    foilMask: "/cards/m/pucci_whitesnake_m.png",
+    foilMask: "/cards/m/pucci_whitesnake_m.webp",
     dustOpacity: 0.3,
   },
 
@@ -850,8 +851,8 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "epic",
     count: 1,
-    foilMask: "/cards/m/pucci_cmoon_m.png",
-    texture: "/patterns/circles.png",
+    foilMask: "/cards/m/pucci_cmoon_m.webp",
+    texture: "/patterns/circles.webp",
     dustOpacity: 0.3,
   },
   {
@@ -859,7 +860,7 @@ export const characterCards: CardProps[] = [
     name: "Enrico Pucci (Made in Heaven)",
     description:
       "Final evolution of Pucci's Stand, accelerating time to reshape the flow of the universe.",
-    image: "/cards/imgs/pucci_made_in_heaven.jpg",
+    image: "/cards/imgs/pucci_made_in_heaven.webp",
     hp: 9,
     attack: 10,
     abilities: [
@@ -868,8 +869,8 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "legendary",
     count: 0,
-    foilMask: "/cards/m/pucci_made_in_heaven_m.png",
-    texture: "/patterns/circles.png",
+    foilMask: "/cards/m/pucci_made_in_heaven_m.webp",
+    texture: "/patterns/circles.webp",
     dustOpacity: 0.3,
   },
   {
@@ -877,7 +878,7 @@ export const characterCards: CardProps[] = [
     name: "Lays (Crab Flavor)",
     description:
       "A legendary snack infused with artificial crab flavor. Grants morale boost and distracts enemies with crunch energy.",
-    image: "/cards/imgs/lays_crab.jpg",
+    image: "/cards/imgs/lays_crab.webp",
     hp: 1,
     attack: 1,
     abilities: [
@@ -893,7 +894,7 @@ export const characterCards: CardProps[] = [
     name: "Krosh",
     description:
       "Energetic blue rabbit from a cartoon world, capable of chaotic movement and unpredictable actions.",
-    image: "/cards/imgs/krosh.jpg",
+    image: "/cards/imgs/krosh.webp",
     hp: 4,
     attack: 5,
     abilities: [
@@ -917,8 +918,8 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "epic",
     count: 1,
-    foilMask: "/cards/m/john_wick_m.png",
-    texture: "/patterns/cube3d.png",
+    foilMask: "/cards/m/john_wick_m.webp",
+    texture: "/patterns/cube3d.webp",
     dustOpacity: 0.2,
   },
   {
@@ -953,36 +954,12 @@ export const characterCards: CardProps[] = [
     count: 0,
     dustOpacity: 0.4,
   },
-  // {
-  //   id: "sweetieFox",
-  //   name: "Sweetie Fox",
-  //   description: "You all know who is she.",
-  //   image: "/cards/imgs/sweetiefox.jpg",
-  //   hp: 3,
-  //   attack: 2,
-  //   abilities: [{ id: "porn", icon: "🔞", title: "Film p*rn" }],
-  //   rarity: "common",
-  //   count: 0,
-  //   dustOpacity: 0.2,
-  // },
-  // {
-  //   id: "dianarider",
-  //   name: "Diana Rider",
-  //   description: "You all know who is she.",
-  //   image: "/cards/imgs/dianarider.webp",
-  //   hp: 3,
-  //   attack: 2,
-  //   abilities: [{ id: "porn", icon: "🔞", title: "Film p*rn" }],
-  //   rarity: "common",
-  //   count: 0,
-  //   dustOpacity: 0.2,
-  // },
   {
     id: "darth_vader",
     name: "Darth Vader",
     description:
       "A former Jedi turned Sith Lord who wields the dark side of the Force with devastating control and precision.",
-    image: "/cards/imgs/darthvader.jpg",
+    image: "/cards/imgs/darthvader.webp",
     hp: 9,
     attack: 9,
     abilities: [
@@ -991,8 +968,8 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "legendary",
     count: 0,
-    foilMask: "/cards/m/darthvader_m.png",
-    texture: "/patterns/cube3d.png",
+    foilMask: "/cards/m/darthvader_m.webp",
+    texture: "/patterns/cube3d.webp",
     dustOpacity: 0.4,
   },
   {
@@ -1015,7 +992,7 @@ export const characterCards: CardProps[] = [
     name: "AK-47",
     description:
       "A highly reliable assault rifle known for durability, simplicity, and lethal efficiency in combat scenarios.",
-    image: "/cards/imgs/ak47.jpg",
+    image: "/cards/imgs/ak47.webp",
     hp: 3,
     attack: 9,
     abilities: [
@@ -1024,14 +1001,14 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "rare",
     count: 0,
-    foilMask: "/cards/m/ak47_m.png",
+    foilMask: "/cards/m/ak47_m.webp",
   },
   {
     id: "bakugo",
     name: "Katsuki Bakugo",
     description:
       "Explosive combat specialist with aggressive fighting style and extreme combat drive.",
-    image: "/cards/imgs/bakugo.jpg",
+    image: "/cards/imgs/bakugo.webp",
     hp: 7,
     attack: 9,
     abilities: [
@@ -1040,8 +1017,8 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "epic",
     count: 1,
-    foilMask: "/cards/m/bakugo_m.png",
-    texture: "/patterns/circles.png",
+    foilMask: "/cards/m/bakugo_m.webp",
+    texture: "/patterns/circles.webp",
     dustOpacity: 0.4,
   },
   {
@@ -1049,7 +1026,7 @@ export const characterCards: CardProps[] = [
     name: "Hitori Gotoh",
     description:
       "An extremely introverted guitarist who grows stronger through music, anxiety, and unexpected performance bursts.",
-    image: "/cards/imgs/hitori.jpg",
+    image: "/cards/imgs/hitori.webp",
     hp: 4,
     attack: 7,
     abilities: [
@@ -1065,7 +1042,7 @@ export const characterCards: CardProps[] = [
     name: "Reze",
     description:
       "A charming and deadly hybrid with explosive abilities and deceptive combat style.",
-    image: "/cards/imgs/reze.png",
+    image: "/cards/imgs/reze.webp",
     hp: 7,
     attack: 9,
     abilities: [
@@ -1074,8 +1051,8 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "epic",
     count: 1,
-    foilMask: "/cards/m/reze_m.png",
-    texture: "/patterns/circles.png",
+    foilMask: "/cards/m/reze_m.webp",
+    texture: "/patterns/circles.webp",
     dustOpacity: 0.2,
   },
   {
@@ -1083,7 +1060,7 @@ export const characterCards: CardProps[] = [
     name: "Hatsune Miku",
     description:
       "A virtual idol who influences reality through sound, rhythm, and mass perception control.",
-    image: "/cards/imgs/miku.jpg",
+    image: "/cards/imgs/miku.webp",
     hp: 6,
     attack: 6,
     abilities: [
@@ -1092,9 +1069,9 @@ export const characterCards: CardProps[] = [
     ],
     rarity: "epic",
     count: 1,
-    foilMask: "/cards/m/miku_m.png",
-    // texture: "/patterns/cube3d.png",
-    texture: "/patterns/jellytriangles.jpg",
+    foilMask: "/cards/m/miku_m.webp",
+    // texture: "/patterns/cube3d.webp",
+    texture: "/patterns/jellytriangles.webp",
     dustOpacity: 0.2,
   },
 ];
@@ -1105,7 +1082,7 @@ export const KsufMembers: CardProps[] = [
     name: "Kawaii Potato",
     description:
       "Amazing incredible powerful insomniac unbelievable Mathew Potato from KSUF",
-    image: "/cards/imgs/kawaii_potato.jpg",
+    image: "/cards/imgs/kawaii_potato.webp",
     hp: 2,
     attack: 2,
     abilities: [{ id: "playGD", icon: "🔥", title: "Play Geomery Dash" }],
@@ -1117,7 +1094,7 @@ export const KsufMembers: CardProps[] = [
     name: "Glist",
     description:
       "Amazing incredible powerful insomniac unbelievable Danya Glist from KSUF",
-    image: "/cards/imgs/glist.jpg",
+    image: "/cards/imgs/glist.webp",
     hp: 1,
     attack: 3,
     abilities: [{ id: "scythe", icon: "⚔️", title: "Scythe attack" }],
@@ -1129,7 +1106,7 @@ export const KsufMembers: CardProps[] = [
     name: "Ovsyankuh",
     description:
       "Amazing incredible powerful insomniac unbelievable Vasya Ovsyankuh from KSUF",
-    image: "/cards/imgs/ovsyankuh.jpg",
+    image: "/cards/imgs/ovsyankuh.webp",
     hp: 2,
     attack: 2,
     abilities: [
@@ -1143,7 +1120,7 @@ export const KsufMembers: CardProps[] = [
     id: "mipoh",
     name: "Mipoh",
     description: "Who added him?",
-    image: "/cards/imgs/mipoh.jpg",
+    image: "/cards/imgs/mipoh.webp",
     hp: 2,
     attack: 1,
     abilities: [{ id: "importunity", icon: "😰", title: "Annoy anyone" }],
@@ -1154,7 +1131,7 @@ export const KsufMembers: CardProps[] = [
     id: "sanek",
     name: "Sanek",
     description: "Just Sanek",
-    image: "/cards/imgs/sanek.jpg",
+    image: "/cards/imgs/sanek.webp",
     hp: 1,
     attack: 2,
     abilities: [{ id: "playGD", icon: "🔥", title: "Play Geomery Dash" }],
@@ -1166,7 +1143,7 @@ export const KsufMembers: CardProps[] = [
     name: "KauriXZ",
     description:
       "Amazing incredible powerful insomniac unbelievable Dimas KauriZXC from KSUF",
-    image: "/cards/imgs/kaurixz.jpg",
+    image: "/cards/imgs/kaurixz.webp",
     hp: 3,
     attack: 3,
     abilities: [{ id: "anime", icon: "🔞", title: "Watch anime" }],
@@ -1178,7 +1155,7 @@ export const KsufMembers: CardProps[] = [
     name: "Flowered Head",
     description:
       "Amazing incredible powerful insomniac unbelievable Nikolas Flowered Head from KSUF",
-    image: "/cards/imgs/fh.jpg",
+    image: "/cards/imgs/fh.webp",
     hp: 3,
     attack: 3,
     abilities: [
@@ -1193,7 +1170,7 @@ export const KsufMembers: CardProps[] = [
     name: "Musculus",
     description:
       "Amazing incredible powerful insomniac unbelievable Serega Musculus Head from KSUF",
-    image: "/cards/imgs/musculus.jpg",
+    image: "/cards/imgs/musculus.webp",
     hp: 4,
     attack: 4,
     abilities: [
@@ -1208,7 +1185,7 @@ export const KsufMembers: CardProps[] = [
     name: "QRA",
     description:
       "Amazing incredible powerful insomniac unbelievable Danek QRA Head of KSUF",
-    image: "/cards/imgs/qra.jpg",
+    image: "/cards/imgs/qra.webp",
     hp: 2,
     attack: 2,
     abilities: [
@@ -1222,7 +1199,7 @@ export const KsufMembers: CardProps[] = [
     id: "igor",
     name: "Igor",
     description: "Just Igor",
-    image: "/cards/imgs/igor.jpg",
+    image: "/cards/imgs/igor.webp",
     hp: 2,
     attack: 2,
     abilities: [{ id: "football", icon: "⚽", title: "Watch football" }],

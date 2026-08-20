@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useEffect, memo } from "react";
 import type { CardProps } from "../../../../shared/types/CardTypes/types";
 import styles from "./Card.module.css";
 import { rarityStyle } from "@shared/data";
@@ -8,66 +8,92 @@ type Props = {
   useMouseEffect?: boolean;
 };
 
-export const Card = ({ data, useMouseEffect = true }: Props) => {
-  const [isHovered, setIsHovered] = useState(false);
-
+export const Card = memo(({ data, useMouseEffect = true }: Props) => {
   const cardRef = useRef<HTMLDivElement>(null);
 
-  const mask = data.foilMask;
+  const rectRef = useRef<DOMRect | null>(null);
+
+  const mousePosition = useRef({
+    x: 0,
+    y: 0,
+  });
+
+  const frame = useRef<number | null>(null);
 
   const handleMouseMove = (e: React.MouseEvent) => {
     if (!useMouseEffect) return;
 
     const el = cardRef.current;
-    if (!el) return;
+    const rect = rectRef.current;
 
-    const rect = el.getBoundingClientRect();
+    if (!el || !rect) return;
 
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
+    mousePosition.current = {
+      x: e.clientX - rect.left,
+      y: e.clientY - rect.top,
+    };
 
-    const rotateX = (y / rect.height - 0.5) * -18;
-    const rotateY = (x / rect.width - 0.5) * 18;
+    if (frame.current !== null) {
+      return;
+    }
 
-    el.style.transform = `
-    perspective(900px)
-    rotateX(${rotateX}deg)
-    rotateY(${rotateY}deg)
-    scale(1.03)
-  `;
+    frame.current = requestAnimationFrame(() => {
+      frame.current = null;
 
-    if (!isHovered) return;
+      const { x, y } = mousePosition.current;
 
-    el.style.setProperty("--mx", `${x}px`);
-    el.style.setProperty("--my", `${y}px`);
+      const rotateX = (y / rect.height - 0.5) * -18;
+      const rotateY = (x / rect.width - 0.5) * 18;
 
-    const foilRotate = rotateY * 4 - rotateX * 2;
+      //   el.style.transform = `
+      //   perspective(900px)
+      //   rotateX(${rotateX}deg)
+      //   rotateY(${rotateY}deg)
+      //   scale(1.03)
+      // `;
 
-    el.style.setProperty("--foil-rotate", `${foilRotate}deg`);
+      el.style.setProperty("--rotate-x", `${rotateX}deg`);
+      el.style.setProperty("--rotate-y", `${rotateY}deg`);
+      el.style.setProperty("--scale", `1.03`);
+
+      el.style.setProperty("--mx", `${x}px`);
+      el.style.setProperty("--my", `${y}px`);
+      el.style.setProperty("--foil-rotate", `${rotateY * 4 - rotateX * 2}deg`);
+    });
   };
 
   const handleMouseEnter = () => {
-    setIsHovered(true);
+    const el = cardRef.current;
+
+    if (!el) return;
+
+    rectRef.current = el.getBoundingClientRect();
   };
 
   const handleMouseLeave = () => {
     const el = cardRef.current;
+
     if (!el) return;
 
-    setIsHovered(false);
+    if (frame.current !== null) {
+      cancelAnimationFrame(frame.current);
+      frame.current = null;
+    }
 
-    if (!useMouseEffect) return;
-
-    el.style.transform = `
-    perspective(900px)
-    rotateX(0deg)
-    rotateY(0deg)
-    scale(1)
-  `;
-
-    // НЕ ставим -50% сразу
-    // даём “затухание”
+    el.style.setProperty("--rotate-x", "0deg");
+    el.style.setProperty("--rotate-y", "0deg");
+    el.style.setProperty("--scale", "1");
   };
+
+  useEffect(() => {
+    return () => {
+      if (frame.current !== null) {
+        cancelAnimationFrame(frame.current);
+      }
+    };
+  }, []);
+
+  const mask = data.foilMask;
 
   const maskStyle = mask
     ? {
@@ -98,7 +124,7 @@ export const Card = ({ data, useMouseEffect = true }: Props) => {
       }
     >
       <div className={styles.dust}></div>
-      <div className={styles.lightNoise} />
+      {/* <div className={styles.lightNoise} /> */}
 
       {data.texture && (
         <>
@@ -122,7 +148,15 @@ export const Card = ({ data, useMouseEffect = true }: Props) => {
       <div className={styles.glow} />
 
       <div className={styles.imageWrapper}>
-        <img src={data.image} className={styles.image} />
+        <img
+          src={data.image}
+          className={styles.image}
+          height={380}
+          width={260}
+          loading="lazy"
+          decoding="async"
+          alt=""
+        />
       </div>
 
       <div className={styles.header}>
@@ -164,4 +198,4 @@ export const Card = ({ data, useMouseEffect = true }: Props) => {
       />
     </div>
   );
-};
+});

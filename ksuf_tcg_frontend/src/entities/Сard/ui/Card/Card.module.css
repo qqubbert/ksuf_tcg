@@ -34,9 +34,14 @@
   flex-direction: column;
   justify-content: space-between;
 
-  box-shadow: 0 0 30px 0px rgba(255, 255, 255, 0) ;
+  box-shadow: 0 0 30px 0px rgba(255, 255, 255, 0);
 
-  transition: box-shadow 0.3s ease-in-out;
+  transition:
+    box-shadow 0.3s ease-in-out,
+    transform 150ms ease;
+
+  transform: perspective(900px) rotateX(var(--rotate-x, 0deg))
+    rotateY(var(--rotate-y, 0deg)) scale(var(--scale, 1));
 }
 
 /* .card:hover {
@@ -57,7 +62,7 @@
   background-image:
     radial-gradient(
       circle at var(--mx) var(--my),
-      rgba(255,255,255,0.8),
+      rgba(255, 255, 255, 0.8),
       transparent 40%
     ),
     url("/textures/your-texture.png");
@@ -71,8 +76,8 @@
 
   background: radial-gradient(
     circle at var(--mx) var(--my),
-    rgba(255,255,255,0.9),
-    rgba(255,255,255,0.25) 20%,
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.25) 20%,
     transparent 55%
   );
 
@@ -115,7 +120,7 @@
   display: flex;
   justify-content: space-between;
   align-items: start;
-  
+
   padding: 10px;
   position: relative;
   z-index: 2;
@@ -223,7 +228,7 @@
     transparent 60%
   );
 
-  mix-blend-mode:color-burn;
+  mix-blend-mode: color-burn;
 
   opacity: 0.9;
 
@@ -260,7 +265,6 @@
   filter: brightness(0.9) contrast(1.1);
 }
 
-
 .dust {
   position: absolute;
   inset: 0;
@@ -269,14 +273,13 @@
 
   opacity: var(--dust-opacity);
 
-  background:
-    radial-gradient(
-      circle at var(--mx) var(--my),
-      rgba(255,255,255,1),
-      rgba(255,255,255,.8) 10%,
-      rgba(255,255,255,.9) 25%,
-      transparent 45%
-    );
+  background: radial-gradient(
+    circle at var(--mx) var(--my),
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.8) 10%,
+    rgba(255, 255, 255, 0.9) 25%,
+    transparent 45%
+  );
 
   mask-image: url("/textures/sparkles.png");
   -webkit-mask-image: url("/textures/sparkles.png");
@@ -309,13 +312,11 @@
   background-position: var(--mx) var(--my);
 }
 
-.card[data-rarity="common"] .metallicFoil
-{
+.card[data-rarity="common"] .metallicFoil {
   display: none;
 }
 
-.card[data-rarity="common"] .foil
-{
+.card[data-rarity="common"] .foil {
   opacity: 0.05;
   filter: grayscale(1);
 }
