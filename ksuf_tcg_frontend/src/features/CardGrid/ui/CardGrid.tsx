@@ -37,7 +37,7 @@ export const CardGrid = ({
   const rowVirtualizer = useWindowVirtualizer({
     count: rowCount,
     estimateSize: () => ROW_HEIGHT,
-    overscan: 0,
+    overscan: 1,
     scrollMargin: 16,
   });
 

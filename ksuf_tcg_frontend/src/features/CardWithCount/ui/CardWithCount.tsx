@@ -5,12 +5,14 @@ import type { CardWithCountProps } from "@types";
 import { Card } from "@entities";
 // import { CardCountBadge } from "@shared/components";
 
+import { memo } from "react";
+
 type Props = {
   data: CardWithCountProps;
   mode?: "owned" | "other";
 };
 
-export const CardWithCount = ({ data, mode = "owned" }: Props) => {
+export const CardWithCount = memo(({ data, mode = "owned" }: Props) => {
   const MAX_LAYERS = 3;
 
   const isCollection = mode === "owned";
@@ -39,8 +41,7 @@ export const CardWithCount = ({ data, mode = "owned" }: Props) => {
               >
                 <Card data={data} />
               </div>
-            ))
-            }
+            ))}
           </div>
 
           {count > MAX_LAYERS && (
@@ -50,4 +51,4 @@ export const CardWithCount = ({ data, mode = "owned" }: Props) => {
       )}
     </div>
   );
-};
+});

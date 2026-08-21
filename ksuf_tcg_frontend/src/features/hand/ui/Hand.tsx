@@ -2,8 +2,9 @@ import styles from "./Hand.module.css";
 
 import { useState } from "react";
 
-import { Card, type CardProps } from "@entities";
+import { Card } from "@entities";
 import { characterCards } from "@shared/data";
+import { type CardProps } from "@shared/types";
 
 export const Hand = ({}) => {
   const VISIBLE_COUNT = 9;

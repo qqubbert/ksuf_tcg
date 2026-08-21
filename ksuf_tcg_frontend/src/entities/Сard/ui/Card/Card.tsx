@@ -1,5 +1,5 @@
 import { useRef, useEffect, memo } from "react";
-import type { CardProps } from "../../../../shared/types/CardTypes/types";
+import type { CardProps } from "@shared/types/CardTypes/types";
 import styles from "./Card.module.css";
 import { rarityStyle } from "@shared/data";
 
