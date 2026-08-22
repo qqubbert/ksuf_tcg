@@ -8,7 +8,7 @@ type CurrencyState = {
   canAfford: (amount: number) => boolean;
 };
 
-export const useCurrencyStore = create<CurrencyState>((set, get) => ({
+export const  useCurrencyStore = create<CurrencyState>((set, get) => ({
   coins: 1000,
 
   addCoins: (amount) => {

@@ -7,8 +7,8 @@ export const characterCards: CardProps[] = [
     description:
       "Stoic Stand user with overwhelming physical strength and precision.",
     image: "/cards/imgs/jotaro.webp",
-    hp: 9,
-    attack: 8,
+    hp: 90,
+    attack: 80,
     abilities: [
       { id: "ora", icon: "👊", title: "ORA ORA Rush" },
       { id: "stop", icon: "⏱️", title: "Time Stop" },
@@ -24,8 +24,8 @@ export const characterCards: CardProps[] = [
     name: "Frieren",
     description: "Ancient mage who studies the nature of magic and time.",
     image: "/cards/imgs/frieren.webp",
-    hp: 6,
-    attack: 9,
+    hp: 60,
+    attack: 90,
     abilities: [
       { id: "magic", icon: "✨", title: "Ancient Spellcasting" },
       { id: "analysis", icon: "📚", title: "Mana Analysis" },
@@ -41,8 +41,8 @@ export const characterCards: CardProps[] = [
     name: "Denji",
     description: "Chainsaw Devil hybrid with chaotic combat style.",
     image: "/cards/imgs/denji.webp",
-    hp: 5,
-    attack: 7,
+    hp: 50,
+    attack: 50,
     abilities: [
       { id: "chainsaw", icon: "🪚", title: "Chainsaw Slash" },
       { id: "devil", icon: "😈", title: "Devil Trigger" },
@@ -58,8 +58,8 @@ export const characterCards: CardProps[] = [
     name: "Mikasa Ackerman",
     description: "Elite soldier with extreme agility and combat instincts.",
     image: "/cards/imgs/mikasa.webp",
-    hp: 7,
-    attack: 8,
+    hp: 40,
+    attack: 50,
     abilities: [
       { id: "blade", icon: "⚔️", title: "Blade Dance" },
       { id: "titan", icon: "🧠", title: "Ackerman Instinct" },
@@ -74,8 +74,8 @@ export const characterCards: CardProps[] = [
     description:
       "Mysterious control devil manipulating humans and devils alike.",
     image: "/cards/imgs/makima.webp",
-    hp: 10,
-    attack: 7,
+    hp: 100,
+    attack: 70,
     abilities: [
       { id: "control", icon: "🧷", title: "Control Manipulation" },
       { id: "fear", icon: "😶", title: "Fear Contract" },
@@ -91,8 +91,8 @@ export const characterCards: CardProps[] = [
     name: "Naruto Uzumaki",
     description: "Ninja with boundless energy and Nine-Tails power.",
     image: "/cards/imgs/naruto.webp",
-    hp: 8,
-    attack: 8,
+    hp: 80,
+    attack: 80,
     abilities: [
       { id: "rasengan", icon: "🌀", title: "Rasengan" },
       { id: "kurama", icon: "🦊", title: "Nine-Tails Mode" },
@@ -109,8 +109,8 @@ export const characterCards: CardProps[] = [
     name: "Tyler Durden",
     description: "Anarchic symbol of rebellion and psychological collapse.",
     image: "/cards/imgs/tyler.webp",
-    hp: 6,
-    attack: 9,
+    hp: 36,
+    attack: 39,
     abilities: [
       { id: "chaos", icon: "💥", title: "Chaos Theory" },
       { id: "fightclub", icon: "🥊", title: "Fight Club Doctrine" },
@@ -125,8 +125,8 @@ export const characterCards: CardProps[] = [
     name: "Walter White",
     description: "Chemistry teacher turned strategic drug empire architect.",
     image: "/cards/imgs/walter.webp",
-    hp: 7,
-    attack: 8,
+    hp: 10,
+    attack: 16,
     abilities: [
       { id: "chem", icon: "⚗️", title: "Chemistry Mastery" },
       { id: "heisenberg", icon: "🎩", title: "Heisenberg Mode" },
@@ -142,8 +142,8 @@ export const characterCards: CardProps[] = [
     name: "Saul Goodman",
     description: "Manipulative lawyer exploiting loopholes in law.",
     image: "/cards/imgs/saul.webp",
-    hp: 5,
-    attack: 6,
+    hp: 15,
+    attack: 16,
     abilities: [
       { id: "law", icon: "⚖️", title: "Legal Manipulation" },
       { id: "deal", icon: "📞", title: "Backroom Deals" },
@@ -159,8 +159,8 @@ export const characterCards: CardProps[] = [
     name: "Mike Ehrmantraut",
     description: "Professional fixer with military-level discipline.",
     image: "/cards/imgs/mike.webp",
-    hp: 9,
-    attack: 7,
+    hp: 19,
+    attack: 17,
     abilities: [
       { id: "stealth", icon: "🕶️", title: "Silent Execution" },
       { id: "tactics", icon: "🎯", title: "Tactical Planning" },
@@ -176,8 +176,8 @@ export const characterCards: CardProps[] = [
     name: "Berlin",
     description: "Charismatic and ruthless strategist from a heist crew.",
     image: "/cards/imgs/berlin.webp",
-    hp: 7,
-    attack: 8,
+    hp: 17,
+    attack: 18,
     abilities: [
       { id: "lead", icon: "🎭", title: "Charismatic Leadership" },
       { id: "heist", icon: "💰", title: "Heist Execution" },
@@ -193,8 +193,8 @@ export const characterCards: CardProps[] = [
     description:
       "Blood Devil with chaotic behavior and unpredictable combat style.",
     image: "/cards/imgs/power.webp",
-    hp: 7,
-    attack: 9,
+    hp: 40,
+    attack: 40,
     abilities: [
       { id: "blood", icon: "🩸", title: "Blood Manipulation" },
       { id: "berserk", icon: "😈", title: "Berserk Rampage" },
@@ -207,8 +207,8 @@ export const characterCards: CardProps[] = [
     name: "Izuku Midoriya",
     description: "Hero-in-training with analytical mind and inherited power.",
     image: "/cards/imgs/midoriya.webp",
-    hp: 7,
-    attack: 8,
+    hp: 40,
+    attack: 80,
     abilities: [
       { id: "oneforall", icon: "💥", title: "One For All" },
       { id: "analysis", icon: "📊", title: "Combat Analysis" },
@@ -223,8 +223,8 @@ export const characterCards: CardProps[] = [
     description:
       "Elite EVA pilot with high confidence and aggressive combat style.",
     image: "/cards/imgs/asuka.webp",
-    hp: 7,
-    attack: 8,
+    hp: 17,
+    attack: 18,
     abilities: [
       { id: "eva", icon: "🤖", title: "EVA Combat Sync" },
       { id: "rage", icon: "🔥", title: "Prideful Assault" },
@@ -239,8 +239,8 @@ export const characterCards: CardProps[] = [
     description:
       "Mysterious EVA pilot with calm emotional profile and high synchronization.",
     image: "/cards/imgs/rei.webp",
-    hp: 6,
-    attack: 7,
+    hp: 16,
+    attack: 17,
     abilities: [
       { id: "sync", icon: "🧬", title: "High Sync Ratio" },
       { id: "shield", icon: "🛡️", title: "A.T. Field Defense" },
@@ -254,8 +254,8 @@ export const characterCards: CardProps[] = [
     name: "Eren Yeager",
     description: "Titan shifter driven by destruction and freedom.",
     image: "/cards/imgs/eren.webp",
-    hp: 9,
-    attack: 10,
+    hp: 90,
+    attack: 40,
     abilities: [
       { id: "titan", icon: "🧱", title: "Titan Transformation" },
       { id: "rage", icon: "⚡", title: "Rumbling Fury" },
@@ -271,8 +271,8 @@ export const characterCards: CardProps[] = [
     description:
       "Lost digital performer trapped inside a surreal virtual circus.",
     image: "/cards/imgs/pomni.webp",
-    hp: 5,
-    attack: 6,
+    hp: 15,
+    attack: 16,
     abilities: [
       { id: "glitch", icon: "🧩", title: "Reality Glitch" },
       { id: "panic", icon: "😵", title: "Desperation Burst" },
@@ -288,8 +288,8 @@ export const characterCards: CardProps[] = [
     description:
       "Enigmatic ringmaster controlling the rules of a digital circus.",
     image: "/cards/imgs/caine.webp",
-    hp: 8,
-    attack: 7,
+    hp: 48,
+    attack: 47,
     abilities: [
       { id: "control", icon: "🎪", title: "Circus Control" },
       { id: "illusion", icon: "🪄", title: "Reality Manipulation" },
@@ -305,8 +305,8 @@ export const characterCards: CardProps[] = [
     description:
       "Scientific genius rebuilding civilization through pure logic and chemistry.",
     image: "/cards/imgs/senku.webp",
-    hp: 6,
-    attack: 7,
+    hp: 16,
+    attack: 17,
     abilities: [
       { id: "science", icon: "🧪", title: "Scientific Breakthrough" },
       { id: "analysis", icon: "📐", title: "Hyper Analysis" },
@@ -322,8 +322,8 @@ export const characterCards: CardProps[] = [
     description:
       "Vampiric Stand user with overwhelming ambition and time manipulation.",
     image: "/cards/imgs/dio.webp",
-    hp: 9,
-    attack: 10,
+    hp: 90,
+    attack: 100,
     abilities: [
       { id: "stand", icon: "⏱️", title: "The World" },
       { id: "vampire", icon: "🩸", title: "Vampiric Regeneration" },
@@ -340,8 +340,8 @@ export const characterCards: CardProps[] = [
     description:
       "Cyberpunk mercenary optimized for mobility, precision, and high-risk combat.",
     image: "/cards/imgs/rebecca.webp",
-    hp: 7,
-    attack: 9,
+    hp: 27,
+    attack: 29,
     abilities: [
       { id: "cyber", icon: "🔫", title: "Cyber Enhancements" },
       { id: "rush", icon: "⚡", title: "High-Speed Assault" },
@@ -357,8 +357,8 @@ export const characterCards: CardProps[] = [
     description:
       "Master detective relying on deduction and psychological manipulation.",
     image: "/cards/imgs/l.webp",
-    hp: 5,
-    attack: 6,
+    hp: 15,
+    attack: 16,
     abilities: [
       { id: "deduction", icon: "🧠", title: "Perfect Deduction" },
       { id: "trap", icon: "🔍", title: "Psychological Trap" },
@@ -374,8 +374,8 @@ export const characterCards: CardProps[] = [
     description:
       "Demon Slayer with heightened senses and adaptive combat style.",
     image: "/cards/imgs/tanjiro.webp",
-    hp: 7,
-    attack: 8,
+    hp: 27,
+    attack: 38,
     abilities: [
       { id: "water", icon: "🌊", title: "Water Breathing" },
       { id: "sense", icon: "👃", title: "Enhanced Senses" },
@@ -392,8 +392,8 @@ export const characterCards: CardProps[] = [
     description:
       "Berserker warrior surviving impossible odds through sheer willpower.",
     image: "/cards/imgs/guts.webp",
-    hp: 9,
-    attack: 10,
+    hp: 40,
+    attack: 60,
     abilities: [
       { id: "berserk", icon: "🩸", title: "Berserker Armor" },
       { id: "dragonslayer", icon: "⚔️", title: "Dragon Slayer Strike" },
@@ -409,8 +409,8 @@ export const characterCards: CardProps[] = [
     description:
       "Unstable superhuman with overwhelming power and psychological dominance.",
     image: "/cards/imgs/homelander.webp",
-    hp: 10,
-    attack: 10,
+    hp: 100,
+    attack: 100,
     abilities: [
       { id: "laser", icon: "👁️", title: "Heat Vision" },
       { id: "fear", icon: "😨", title: "Psychological Domination" },
@@ -428,8 +428,8 @@ export const characterCards: CardProps[] = [
     description:
       "Interdimensional predator hunting by instinct and overwhelming strength.",
     image: "/cards/imgs/demogorgon.webp",
-    hp: 8,
-    attack: 9,
+    hp: 20,
+    attack: 40,
     abilities: [
       { id: "portal", icon: "🌀", title: "Dimensional Leap" },
       { id: "hunt", icon: "🦷", title: "Predatory Assault" },
@@ -444,8 +444,8 @@ export const characterCards: CardProps[] = [
     description:
       "God of War driven by vengeance, wielding divine power and brutal force.",
     image: "/cards/imgs/kratos.webp",
-    hp: 10,
-    attack: 10,
+    hp: 100,
+    attack: 70,
     abilities: [
       { id: "rage", icon: "🔥", title: "Spartan Rage" },
       { id: "blades", icon: "⚔️", title: "Blades of Chaos" },
@@ -462,8 +462,8 @@ export const characterCards: CardProps[] = [
     description:
       "Agile hero with enhanced reflexes, intelligence, and spider-sense.",
     image: "/cards/imgs/spiderman.webp",
-    hp: 7,
-    attack: 8,
+    hp: 40,
+    attack: 48,
     abilities: [
       { id: "web", icon: "🕸️", title: "Web Swing & Trap" },
       { id: "sense", icon: "⚡", title: "Spider-Sense" },
@@ -480,8 +480,8 @@ export const characterCards: CardProps[] = [
     description:
       "Unpredictable mercenary with regeneration and chaotic combat style.",
     image: "/cards/imgs/deadpool.webp",
-    hp: 8,
-    attack: 9,
+    hp: 70,
+    attack: 70,
     abilities: [
       { id: "regen", icon: "💉", title: "Regeneration" },
       { id: "chaos", icon: "🎯", title: "Fourth Wall Break" },
@@ -498,8 +498,8 @@ export const characterCards: CardProps[] = [
     description:
       "Peak human strategist using preparation, gadgets, and psychological warfare.",
     image: "/cards/imgs/batman.webp",
-    hp: 5,
-    attack: 8,
+    hp: 30,
+    attack: 30,
     abilities: [
       { id: "prep", icon: "🧠", title: "Preparation Mastery" },
       { id: "gadget", icon: "🦇", title: "Gadget Arsenal" },
@@ -543,8 +543,8 @@ export const characterCards: CardProps[] = [
     description:
       "Hero who defeated every opponent with a single punch, possessing overwhelming and absolute strength.",
     image: "/cards/imgs/saitama.webp",
-    hp: 10,
-    attack: 10,
+    hp: 999,
+    attack: 999,
     abilities: [
       { id: "normal_punch", icon: "👊", title: "Normal Punch" },
       { id: "serious_punch", icon: "💥", title: "Serious Punch" },
@@ -559,8 +559,8 @@ export const characterCards: CardProps[] = [
     description:
       "Cold and precise swordsman seeking absolute power through disciplined combat.",
     image: "/cards/imgs/vergil.webp",
-    hp: 8,
-    attack: 10,
+    hp: 60,
+    attack: 60,
     abilities: [
       { id: "yamato", icon: "🗡️", title: "Yamato Slash" },
       { id: "judgment", icon: "⚡", title: "Judgment Cut" },
@@ -577,8 +577,8 @@ export const characterCards: CardProps[] = [
     description:
       "Energetic pirate with rubber body and unpredictable fighting style.",
     image: "/cards/imgs/luffy.webp",
-    hp: 7,
-    attack: 8,
+    hp: 70,
+    attack: 60,
     abilities: [
       { id: "gum_gum", icon: "🪢", title: "Gum-Gum Punch" },
       { id: "stretch", icon: "🤸", title: "Rubber Body" },
@@ -595,8 +595,8 @@ export const characterCards: CardProps[] = [
     description:
       "Unstoppable swamp ogre with extreme durability and dominance in close combat.",
     image: "/cards/imgs/shrek.webp",
-    hp: 9,
-    attack: 7,
+    hp: 19,
+    attack: 17,
     abilities: [
       { id: "swamp", icon: "🌿", title: "Swamp Strength" },
       { id: "roar", icon: "😡", title: "Ogre Roar" },
@@ -627,8 +627,8 @@ export const characterCards: CardProps[] = [
     description:
       "German medium tank with reliable armor and balanced firepower, effective in sustained engagements.",
     image: "/cards/imgs/pz_kpfw_4_ausf_h.webp",
-    hp: 12,
-    attack: 8,
+    hp: 32,
+    attack: 38,
     abilities: [
       { id: "shell", icon: "💥", title: "Cannon Shell" },
       { id: "armor", icon: "🛡️", title: "Reinforced Armor" },
@@ -660,7 +660,7 @@ export const characterCards: CardProps[] = [
       "A critical system failure that abruptly halts all activity and leaves everything temporarily unresponsive.",
     image: "/cards/imgs/bsod.webp",
     hp: 1,
-    attack: 6,
+    attack: 36,
     abilities: [
       { id: "crash", icon: "💙", title: "System Crash" },
       { id: "freeze", icon: "🖥️", title: "Freeze Process" },
@@ -676,7 +676,7 @@ export const characterCards: CardProps[] = [
       "A silent explosive creature that gets stronger the closer it is to its target.",
     image: "/cards/imgs/creeper.webp",
     hp: 4,
-    attack: 8,
+    attack: 28,
     abilities: [
       { id: "hiss", icon: "💣", title: "Primed Explosion" },
       { id: "boom", icon: "💥", title: "Self-Destruct" },
@@ -691,8 +691,8 @@ export const characterCards: CardProps[] = [
     description:
       "A brilliant gang leader who dominates through strategy, influence, and calculated risk-taking.",
     image: "/cards/imgs/tommy_shelby.webp",
-    hp: 7,
-    attack: 8,
+    hp: 17,
+    attack: 18,
     abilities: [
       { id: "plan", icon: "🎩", title: "Mastermind" },
       { id: "influence", icon: "💼", title: "Political Influence" },
@@ -708,8 +708,8 @@ export const characterCards: CardProps[] = [
     description:
       "A calm and meticulous crime lord who hides ruthless ambition behind a flawless public image.",
     image: "/cards/imgs/gustavo_fring.webp",
-    hp: 7,
-    attack: 8,
+    hp: 17,
+    attack: 18,
     abilities: [
       { id: "empire", icon: "🍗", title: "Criminal Empire" },
       { id: "strategy", icon: "♟️", title: "Perfect Planning" },
@@ -726,8 +726,8 @@ export const characterCards: CardProps[] = [
     description:
       "A resourceful survivor forced to outsmart dangerous enemies on every side.",
     image: "/cards/imgs/nacho_varga.webp",
-    hp: 6,
-    attack: 7,
+    hp: 10,
+    attack: 12,
     abilities: [
       { id: "stealth", icon: "🕶️", title: "Undercover" },
       { id: "escape", icon: "🏃", title: "Last Resort" },
@@ -742,8 +742,8 @@ export const characterCards: CardProps[] = [
     description:
       "A brilliant hacker capable of dismantling powerful systems through intelligence and determination.",
     image: "/cards/imgs/elliot_alderson.webp",
-    hp: 5,
-    attack: 8,
+    hp: 15,
+    attack: 18,
     abilities: [
       { id: "hack", icon: "💻", title: "System Breach" },
       { id: "fsociety", icon: "👤", title: "fsociety" },
@@ -760,8 +760,8 @@ export const characterCards: CardProps[] = [
     description:
       "An honorable warrior who inspires allies and stands firm against impossible odds.",
     image: "/cards/imgs/jon_snow.webp",
-    hp: 8,
-    attack: 8,
+    hp: 18,
+    attack: 18,
     abilities: [
       { id: "longclaw", icon: "⚔️", title: "Longclaw" },
       { id: "leadership", icon: "🐺", title: "King in the North" },
@@ -776,8 +776,8 @@ export const characterCards: CardProps[] = [
     description:
       "A shape-shifting entity that feeds on fear and manipulates perception to isolate and weaken opponents.",
     image: "/cards/imgs/pennywise.webp",
-    hp: 8,
-    attack: 9,
+    hp: 60,
+    attack: 60,
     abilities: [
       { id: "fear", icon: "🎈", title: "Manifest Fear" },
       { id: "illusion", icon: "🌀", title: "Reality Distortion" },
@@ -792,8 +792,8 @@ export const characterCards: CardProps[] = [
     description:
       "A blind, sensory-driven entity that hunts by sound and vibration, overwhelming anything that disturbs its domain.",
     image: "/cards/imgs/warden.webp",
-    hp: 10,
-    attack: 10,
+    hp: 60,
+    attack: 80,
     abilities: [
       { id: "sonic", icon: "📢", title: "Sonic Burst" },
       { id: "hunt", icon: "🖤", title: "Predator Instinct" },
@@ -809,8 +809,8 @@ export const characterCards: CardProps[] = [
     description:
       "A fragile yet influential presence that disrupts enemy morale and weakens coordinated actions over time.",
     image: "/cards/imgs/kurt_cobain.webp",
-    hp: 3,
-    attack: 2,
+    hp: 27,
+    attack: 6,
     abilities: [
       { id: "mood", icon: "🎸", title: "Mood Shift" },
       { id: "debuff", icon: "🌫️", title: "Morale Collapse" },
@@ -825,8 +825,8 @@ export const characterCards: CardProps[] = [
     description:
       "Devoted priest with a Stand capable of extracting and manipulating memories and abilities.",
     image: "/cards/imgs/pucci_whitesnake.webp",
-    hp: 7,
-    attack: 8,
+    hp: 70,
+    attack: 80,
     abilities: [
       { id: "disk", icon: "💿", title: "Memory Disc Extraction" },
       { id: "steal", icon: "🧠", title: "Ability Theft" },
@@ -843,8 +843,8 @@ export const characterCards: CardProps[] = [
     description:
       "Stand user who manipulates gravity and inverts physical forces in combat.",
     image: "/cards/imgs/pucci_cmoon.webp",
-    hp: 8,
-    attack: 9,
+    hp: 80,
+    attack: 90,
     abilities: [
       { id: "gravity", icon: "🌑", title: "Gravity Reversal" },
       { id: "impact", icon: "💥", title: "Surface Inversion Strike" },
@@ -861,8 +861,8 @@ export const characterCards: CardProps[] = [
     description:
       "Final evolution of Pucci's Stand, accelerating time to reshape the flow of the universe.",
     image: "/cards/imgs/pucci_made_in_heaven.webp",
-    hp: 9,
-    attack: 10,
+    hp: 90,
+    attack: 100,
     abilities: [
       { id: "time_accel", icon: "⏱️", title: "Time Acceleration" },
       { id: "reset", icon: "♾️", title: "Universal Reset Cycle" },
@@ -910,8 +910,8 @@ export const characterCards: CardProps[] = [
     description:
       "Highly trained assassin with unmatched precision, tactical thinking, and combat efficiency.",
     image: "/cards/imgs/john_wick.webp",
-    hp: 8,
-    attack: 10,
+    hp: 80,
+    attack: 70,
     abilities: [
       { id: "gun_fu", icon: "🔫", title: "Gun-Fu Mastery" },
       { id: "focus", icon: "🎯", title: "Perfect Execution" },
@@ -944,7 +944,7 @@ export const characterCards: CardProps[] = [
     description:
       "Obsessive prehistoric squirrel endlessly chasing an acorn, causing large-scale environmental chaos unintentionally.",
     image: "/cards/imgs/scrat.webp",
-    hp: 2,
+    hp: 9,
     attack: 4,
     abilities: [
       { id: "acorn", icon: "🥜", title: "Acorn Obsession" },
@@ -960,8 +960,8 @@ export const characterCards: CardProps[] = [
     description:
       "A former Jedi turned Sith Lord who wields the dark side of the Force with devastating control and precision.",
     image: "/cards/imgs/darthvader.webp",
-    hp: 9,
-    attack: 9,
+    hp: 70,
+    attack: 100,
     abilities: [
       { id: "force_choke", icon: "🖐️", title: "Force Choke" },
       { id: "force_push", icon: "🌪️", title: "Force Push" },
@@ -978,7 +978,7 @@ export const characterCards: CardProps[] = [
     description:
       "A weak but persistent Pokémon known for its survival instinct and unexpected potential evolution.",
     image: "/cards/imgs/magikarp.webp",
-    hp: 2,
+    hp: 1,
     attack: 1,
     abilities: [
       { id: "splash", icon: "💦", title: "Splash" },
@@ -1009,8 +1009,8 @@ export const characterCards: CardProps[] = [
     description:
       "Explosive combat specialist with aggressive fighting style and extreme combat drive.",
     image: "/cards/imgs/bakugo.webp",
-    hp: 7,
-    attack: 9,
+    hp: 60,
+    attack: 90,
     abilities: [
       { id: "explosion", icon: "💥", title: "Explosion" },
       { id: "howitzer", icon: "🔥", title: "Howitzer Impact" },
@@ -1043,8 +1043,8 @@ export const characterCards: CardProps[] = [
     description:
       "A charming and deadly hybrid with explosive abilities and deceptive combat style.",
     image: "/cards/imgs/reze.webp",
-    hp: 7,
-    attack: 9,
+    hp: 70,
+    attack: 90,
     abilities: [
       { id: "bomb", icon: "💣", title: "Bomb Transformation" },
       { id: "assassination", icon: "🗡️", title: "Silent Kill" },
@@ -1061,8 +1061,8 @@ export const characterCards: CardProps[] = [
     description:
       "A virtual idol who influences reality through sound, rhythm, and mass perception control.",
     image: "/cards/imgs/miku.webp",
-    hp: 6,
-    attack: 6,
+    hp: 60,
+    attack: 60,
     abilities: [
       { id: "vocaloid_wave", icon: "🎤", title: "Vocal Wave Attack" },
       { id: "hologram", icon: "🌐", title: "Holographic Overload" },

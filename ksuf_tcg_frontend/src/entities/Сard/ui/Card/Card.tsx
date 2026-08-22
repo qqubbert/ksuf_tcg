@@ -163,9 +163,12 @@ export const Card = memo(
                 {data.rarity !== "rare" && (
                   <div className={styles.foil} style={{ ...maskStyle }} />
                 )}
-                {/* {data.rarity === "rare" &&  */}
-                <div className={styles.metallicFoil} style={{ ...maskStyle }} />
-                {/* } */}
+                {/* {data.rarity !== "legendary" && ( */}
+                  <div
+                    className={styles.metallicFoil}
+                    style={{ ...maskStyle }}
+                  />
+                {/* )} */}
               </>
             )}
           </>

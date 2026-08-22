@@ -7,11 +7,12 @@ type Props = {
   children?: ReactNode;
   type?: "button" | "submit" | "reset";
   parentStyles?: string;
+  isDisabled?: boolean;
 };
 
-export const Button = ({ onClick, children, type = "button", parentStyles = "" }: Props) => {
+export const Button = ({ onClick, children, type = "button", parentStyles = "", isDisabled = false }: Props) => {
   return (
-    <button className={`${styles.button} ${parentStyles}`} onClick={onClick} type={type}>
+    <button disabled={isDisabled} className={`${styles.button} ${parentStyles}`} onClick={onClick} type={type}>
       {children}
     </button>
   );

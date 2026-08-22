@@ -5,7 +5,23 @@
 
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 5px;
+
+  min-width: 260px;
+  min-height: 450px;
+
+  justify-content: center;
+}
+
+.collectionCountText {
+  height: 20px;
+  text-align: center;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.collectionCount {
+  color: rgba(255, 255, 255, 0.35);
 }
 
 button.buyButton {
@@ -13,6 +29,11 @@ button.buyButton {
   color: white;
   
   justify-content: space-between;
+}
+
+.purchased {
+  text-align: center;
+  align-self: center;
 }
 
 .priceContainer {

@@ -12,8 +12,8 @@ type Props = {
 };
 
 export const Collection = ({ showToolbar = false }: Props) => {
+  const [mode, setMode] = useState<CollectionMode>("other");
   // const [mode, setMode] = useState<CollectionMode>("owned");
-  const [mode, setMode] = useState<CollectionMode>("owned");
 
   const cards = useMemo(() => {
     return mode === "owned"

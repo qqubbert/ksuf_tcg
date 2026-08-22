@@ -482,9 +482,9 @@
     circle at var(--mx) var(--my),
     rgba(255, 255, 255, 0.6),
     /* rgba(120, 200, 255, 0.6), */ /* rgba(255, 0, 200, 0.5), */ transparent
-      25%
+      40%
   );
 
-  mix-blend-mode: overlay;
-  opacity: 0.7;
+  mix-blend-mode: soft-light;
+  opacity: 0.85;
 }
