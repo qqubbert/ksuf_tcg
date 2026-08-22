@@ -3,11 +3,12 @@ import styles from "./Hand.module.css";
 import { useState } from "react";
 
 import { Card } from "@entities";
-import { characterCards } from "@shared/data";
-import { type CardProps } from "@shared/types";
+import { characterCards } from "@data";
+import { type CardProps } from "@types";
 
 export const Hand = ({}) => {
   const VISIBLE_COUNT = 9;
+  const BUFFER = 1;
 
   const [activeId, setActiveId] = useState<string | null>(null);
 
@@ -16,21 +17,20 @@ export const Hand = ({}) => {
   const ownedCards = characterCards.filter((card) => card.count > 0);
   const count = ownedCards.length;
 
-  const visibleCards = ownedCards.slice(startIndex, startIndex + VISIBLE_COUNT);
-  const hiddenLeft = startIndex;
-  const hiddenRight = Math.max(
-    0,
-    ownedCards.length - (startIndex + VISIBLE_COUNT),
-  );
+  const [direction, setDirection] = useState<"left" | "right">("right");
 
   const handleWheel = (e: React.WheelEvent) => {
     if (ownedCards.length <= VISIBLE_COUNT) return;
 
     if (e.deltaY > 0) {
+      setDirection("right");
+
       setStartIndex((prev) =>
         Math.min(prev + 1, ownedCards.length - VISIBLE_COUNT),
       );
     } else {
+      setDirection("left");
+
       setStartIndex((prev) => Math.max(prev - 1, 0));
     }
   };
@@ -42,6 +42,20 @@ export const Hand = ({}) => {
   // динамический сдвиг
   const offsetStep = Math.max(70, 120 - count * 5);
 
+  const renderStart = Math.max(0, startIndex - BUFFER);
+  const renderEnd = Math.min(
+    ownedCards.length,
+    startIndex + VISIBLE_COUNT + BUFFER,
+  );
+
+  const renderedCards = ownedCards.slice(renderStart, renderEnd);
+
+  const hiddenLeft = startIndex;
+  const hiddenRight = Math.max(
+    0,
+    ownedCards.length - (startIndex + VISIBLE_COUNT),
+  );
+
   return (
     <>
       {(hiddenLeft > 0 || hiddenRight > 0) && (
@@ -51,40 +65,54 @@ export const Hand = ({}) => {
         </div>
       )}
       <div className={styles.hand} onWheel={handleWheel}>
-        {visibleCards.map((card: CardProps, index: number) => {
-          const isActive = activeId === card.id;
+        {renderedCards.map((card, localIndex) => {
+          const index = renderStart + localIndex;
 
-          const offsetFromCenter = index - (visibleCards.length - 1) / 2;
+          const position = index - startIndex;
+
+          const offsetFromCenter = position - (VISIBLE_COUNT - 1) / 2;
 
           const angle = offsetFromCenter * (maxAngle / VISIBLE_COUNT);
 
-          const xOffset = (index - visibleCards.length / 2) * offsetStep;
+          const xOffset = offsetFromCenter * offsetStep;
 
-          // максимум подъёма краёв
-          const center = (visibleCards.length - 1) / 2;
+          const center = (VISIBLE_COUNT - 1) / 2;
 
-          const arcHeight = 20;
+          const yOffset = Math.pow(offsetFromCenter / center, 2) * 20;
 
-          const yOffset = Math.pow(offsetFromCenter / center, 2) * arcHeight;
+          const isBufferLeft = position < 0;
+          const isBufferRight = position >= VISIBLE_COUNT;
+
+          const animationClass =
+            direction === "right"
+              ? isBufferLeft
+                ? styles.exitingLeft
+                : isBufferRight
+                  ? styles.enteringRight
+                  : styles.visible
+              : isBufferLeft
+                ? styles.enteringLeft
+                : isBufferRight
+                  ? styles.exitingRight
+                  : styles.visible;
 
           return (
             <div
               key={card.id}
-              className={styles.cardWrapper}
+              className={`${styles.cardWrapper} ${animationClass} ${activeId === card.id ? styles.active : ""}`}
               style={{
                 transform: `
-                translateX(${xOffset}px)
-                translateY(${yOffset}px)
-                rotate(${angle}deg)
-                translateY(${isActive ? -35 : 0}px)
-                scale(${isActive ? 1.08 : 1})
-              `,
-                zIndex: isActive ? 1000 : index,
+              translateX(${xOffset}px)
+              translateY(${yOffset}px)
+              rotate(${angle}deg)
+            `,
               }}
               onMouseEnter={() => setActiveId(card.id)}
               onMouseLeave={() => setActiveId(null)}
             >
-              <Card data={card} />
+              <div className={styles.cardAnimation}>
+                <Card data={card} />
+              </div>
             </div>
           );
         })}

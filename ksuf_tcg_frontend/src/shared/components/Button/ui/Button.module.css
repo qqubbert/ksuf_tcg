@@ -1,0 +1,29 @@
+.button {
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 5px;
+
+  padding: 5px;
+
+  font-weight: bolder;
+  font-size: 16px;
+
+  box-shadow: 0 0 2px 0px rgba(255, 255, 255, 0.5);
+  
+  outline: 1px solid rgba(255, 255, 255, 0.128);
+
+  transition: all 0.1s ease-in-out;
+  
+  &:hover {
+    box-shadow: 0 0 2px 1px rgba(255, 255, 255, 0.75);
+  }
+
+  &:active {
+    filter: brightness(0.75);
+  }
+}

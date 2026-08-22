@@ -36,7 +36,7 @@ body {
   max-width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
-  background: radial-gradient(black, rgb(17, 17, 17));
+  background: radial-gradient(rgb(22, 22, 22), rgb(12, 12, 12));
 }
 
 #root {

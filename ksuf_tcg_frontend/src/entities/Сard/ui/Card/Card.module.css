@@ -1,3 +1,39 @@
+/* @property --mx {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 0px;
+}
+
+@property --my {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 0px;
+}
+
+@property --rotate-x {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0deg;
+}
+
+@property --rotate-y {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0deg;
+}
+
+@property --scale {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 1;
+}
+
+@property --foil-rotate {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0deg;
+} */
+
 .card {
   width: 260px;
   height: 380px;
@@ -42,6 +78,32 @@
 
   transform: perspective(900px) rotateX(var(--rotate-x, 0deg))
     rotateY(var(--rotate-y, 0deg)) scale(var(--scale, 1));
+
+  /* animation: appear ease-in-out 0.15s forwards; */
+
+  /* transition: */
+    /* transform 0.1s ease, */
+    /* --mx 0.1s ease, */
+    /* --my 0.1s ease, */
+    /* --rotate-x 0.1s ease, */
+    /* --rotate-y 0.1s ease, */
+    /* --scale 0.1s ease, */
+    /* --foil-rotate 0.1s ease; */
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.darker {
+  filter: brightness(var(--dark-intensity));
 }
 
 /* .card:hover {
@@ -58,6 +120,8 @@
   background-repeat: repeat;
   background-size: 50%;
   opacity: 0.1;
+
+  transition: all 0.4s ease-in-out;
 
   background-image:
     radial-gradient(
@@ -84,22 +148,6 @@
   mix-blend-mode: screen;
   opacity: 0.5;
 }
-
-/* .card:not(:hover) .foil,
-.card:not(:hover) .specular, 
-.card:not(:hover) .lightNoise, 
-.card:not(:hover) .light
-{
-  display: none;
-} */
-
-/* .card:hover .foil,
-.card:hover .specular, 
-.card:hover .lightNoise, 
-.card:hover .light
-{
-  display: block;
-} */
 
 .glow {
   position: absolute;

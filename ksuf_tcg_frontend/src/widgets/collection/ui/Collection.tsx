@@ -1,8 +1,8 @@
 import { useMemo, useState } from "react";
 import { characterCards } from "@shared/data";
 // import type { CardProps } from "@entities/card";
-import { CardGrid } from "@features/CardGrid";
-import { CollectionToolbar } from "@features/CollectionToolbar";
+import { CardGrid } from "@widgets";
+import { CollectionToolbar } from "@features";
 import styles from "./Collection.module.css";
 
 type CollectionMode = "owned" | "other";
@@ -13,7 +13,7 @@ type Props = {
 
 export const Collection = ({ showToolbar = false }: Props) => {
   // const [mode, setMode] = useState<CollectionMode>("owned");
-  const [mode, setMode] = useState<CollectionMode>("other");
+  const [mode, setMode] = useState<CollectionMode>("owned");
 
   const cards = useMemo(() => {
     return mode === "owned"

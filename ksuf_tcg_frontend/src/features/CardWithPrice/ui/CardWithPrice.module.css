@@ -1,0 +1,49 @@
+.cardWithPrice {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+button.buyButton {
+  background-color: rgb(39, 39, 39);
+  color: white;
+  
+  justify-content: space-between;
+}
+
+.priceContainer {
+  /* position: absolute; */
+  z-index: 100;
+  /* background-color: darkblue; */
+  padding: 4px;
+  border-radius: 4px;
+  right: -5px;
+  bottom: -5px;
+
+  user-select: none;
+  pointer-events: none;
+
+  display: flex;
+  gap: 10px;
+
+  &:has(.discount) {
+    .price {
+      text-decoration: line-through;
+    }
+  }
+}
+
+.price {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2px;
+}
+
+.discount {
+  color: crimson;
+  font-weight: bolder;
+}

@@ -1,2 +1,2 @@
 export { characterCards } from "./cards/characters";
-export { rarityStyle } from "./settings/cardRarity";
+export { raritySettings } from "./settings/cardRarity";

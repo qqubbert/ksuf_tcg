@@ -1,0 +1,8 @@
+.shopLine {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 25px;
+  flex-wrap: wrap;
+  gap: 25px;
+}

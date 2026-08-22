@@ -2,7 +2,7 @@ import { useWindowVirtualizer } from "@tanstack/react-virtual";
 import { useRef } from "react";
 import { CardWithCount } from "@features";
 import type { CardWithCountProps } from "@types";
-import { useElementWidth } from "@hooks/useElementWidth";
+import { useElementWidth } from "@hooks";
 import styles from "./CardGrid.module.css";
 
 type Props = {
